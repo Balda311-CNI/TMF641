@@ -12,6 +12,7 @@ public class NotifyServiceOrderBody implements java.io.Serializable {
 	private java.lang.String id;
 	private com.cross.NotifyErrorMessageBody errorMessage;
 	private java.lang.String state;
+	private java.lang.String pePortName;
 
 	public NotifyServiceOrderBody() {
 	}
@@ -48,13 +49,22 @@ public class NotifyServiceOrderBody implements java.io.Serializable {
 		this.state = state;
 	}
 
+	public String getPePortName() {
+		return this.pePortName;
+	}
+
+	public void setPePortName( String pePortName) {
+		this.pePortName = pePortName;
+	}
+
 	public NotifyServiceOrderBody(java.lang.String type, java.lang.String id,
-			com.cross.NotifyErrorMessageBody errorMessage,
-			java.lang.String state) {
+								  com.cross.NotifyErrorMessageBody errorMessage,
+								  java.lang.String state, java.lang.String pePortName) {
 		this.type = type;
 		this.id = id;
 		this.errorMessage = errorMessage;
 		this.state = state;
+		this.pePortName = pePortName;
 	}
 
 }
