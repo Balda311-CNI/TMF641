@@ -13,6 +13,7 @@ public class NotifyServiceOrderBody implements java.io.Serializable {
 	private com.cross.NotifyErrorMessageBody errorMessage;
 	private java.lang.String state;
 	private java.lang.String pePortName;
+	private java.lang.String rfsCrossId;
 
 	public NotifyServiceOrderBody() {
 	}
@@ -49,22 +50,32 @@ public class NotifyServiceOrderBody implements java.io.Serializable {
 		this.state = state;
 	}
 
-	public String getPePortName() {
+	public java.lang.String getPePortName() {
 		return this.pePortName;
 	}
 
-	public void setPePortName( String pePortName) {
+	public void setPePortName( java.lang.String pePortName) {
 		this.pePortName = pePortName;
+	}
+
+	public java.lang.String getRfsCrossId() {
+		return this.rfsCrossId;
+	}
+
+	public void setRfsCrossId( java.lang.String rfsCrossId) {
+		this.rfsCrossId = rfsCrossId;
 	}
 
 	public NotifyServiceOrderBody(java.lang.String type, java.lang.String id,
 								  com.cross.NotifyErrorMessageBody errorMessage,
-								  java.lang.String state, java.lang.String pePortName) {
+								  java.lang.String state, java.lang.String pePortName,
+								  java.lang.String rfsCrossId) {
 		this.type = type;
 		this.id = id;
 		this.errorMessage = errorMessage;
 		this.state = state;
 		this.pePortName = pePortName;
+		this.rfsCrossId = rfsCrossId;
 	}
 
 }
