@@ -8,48 +8,48 @@ public class NotifyErrorMessageBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String type;
-	private java.lang.String code;
-	private java.lang.String message;
-	private java.lang.String reason;
+	private String type;
+	private String code;
+	private String message;
+	private String reason;
 
 	public NotifyErrorMessageBody() {
 	}
 
-	public java.lang.String getType() {
+	public String getType() {
 		return this.type;
 	}
 
-	public void setType(java.lang.String type) {
+	public void setType( String type) {
 		this.type = type;
 	}
 
-	public java.lang.String getCode() {
+	public String getCode() {
 		return this.code;
 	}
 
-	public void setCode(java.lang.String code) {
+	public void setCode( String code) {
 		this.code = code;
 	}
 
-	public java.lang.String getMessage() {
+	public String getMessage() {
 		return this.message;
 	}
 
-	public void setMessage(java.lang.String message) {
+	public void setMessage( String message) {
 		this.message = message;
 	}
 
-	public java.lang.String getReason() {
+	public String getReason() {
 		return this.reason;
 	}
 
-	public void setReason(java.lang.String reason) {
+	public void setReason( String reason) {
 		this.reason = reason;
 	}
 
-	public NotifyErrorMessageBody(java.lang.String type, java.lang.String code,
-			java.lang.String message, java.lang.String reason) {
+	public NotifyErrorMessageBody( String type, String code,
+                                   String message, String reason) {
 		this.type = type;
 		this.code = code;
 		this.message = message;

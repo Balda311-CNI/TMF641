@@ -8,118 +8,118 @@ public class CreateLinkBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
-	private java.lang.String description;
-	private java.lang.Integer capacityFull;
-	private java.lang.String routingPolicy;
-	private java.lang.Integer mainFibrilCount;
-	private java.lang.Integer protectionFibrilCount;
-	private java.lang.String status;
-	private java.lang.String linkType;
-	private java.lang.String startNode;
-	private java.lang.String endNode;
+	private String name;
+	private String description;
+	private Integer capacityFull;
+	private String routingPolicy;
+	private Integer mainFibrilCount;
+	private Integer protectionFibrilCount;
+	private String status;
+	private String linkType;
+	private String startNode;
+	private String endNode;
 
-	private java.util.List<com.cross.CreateLinkProviderBody> providers;
+	private java.util.List<CreateLinkProviderBody> providers;
 
 	public CreateLinkBody() {
 	}
 
-	public java.lang.String getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(java.lang.String name) {
+	public void setName( String name) {
 		this.name = name;
 	}
 
-	public java.lang.String getDescription() {
+	public String getDescription() {
 		return this.description;
 	}
 
-	public void setDescription(java.lang.String description) {
+	public void setDescription( String description) {
 		this.description = description;
 	}
 
-	public java.lang.Integer getCapacityFull() {
+	public Integer getCapacityFull() {
 		return this.capacityFull;
 	}
 
-	public void setCapacityFull(java.lang.Integer capacityFull) {
+	public void setCapacityFull( Integer capacityFull) {
 		this.capacityFull = capacityFull;
 	}
 
-	public java.lang.String getRoutingPolicy() {
+	public String getRoutingPolicy() {
 		return this.routingPolicy;
 	}
 
-	public void setRoutingPolicy(java.lang.String routingPolicy) {
+	public void setRoutingPolicy( String routingPolicy) {
 		this.routingPolicy = routingPolicy;
 	}
 
-	public java.lang.Integer getMainFibrilCount() {
+	public Integer getMainFibrilCount() {
 		return this.mainFibrilCount;
 	}
 
-	public void setMainFibrilCount(java.lang.Integer mainFibrilCount) {
+	public void setMainFibrilCount( Integer mainFibrilCount) {
 		this.mainFibrilCount = mainFibrilCount;
 	}
 
-	public java.lang.Integer getProtectionFibrilCount() {
+	public Integer getProtectionFibrilCount() {
 		return this.protectionFibrilCount;
 	}
 
-	public void setProtectionFibrilCount(java.lang.Integer protectionFibrilCount) {
+	public void setProtectionFibrilCount( Integer protectionFibrilCount) {
 		this.protectionFibrilCount = protectionFibrilCount;
 	}
 
-	public java.lang.String getStatus() {
+	public String getStatus() {
 		return this.status;
 	}
 
-	public void setStatus(java.lang.String status) {
+	public void setStatus( String status) {
 		this.status = status;
 	}
 
-	public java.lang.String getLinkType() {
+	public String getLinkType() {
 		return this.linkType;
 	}
 
-	public void setLinkType(java.lang.String linkType) {
+	public void setLinkType( String linkType) {
 		this.linkType = linkType;
 	}
 
-	public java.lang.String getStartNode() {
+	public String getStartNode() {
 		return this.startNode;
 	}
 
-	public void setStartNode(java.lang.String startNode) {
+	public void setStartNode( String startNode) {
 		this.startNode = startNode;
 	}
 
-	public java.lang.String getEndNode() {
+	public String getEndNode() {
 		return this.endNode;
 	}
 
-	public void setEndNode(java.lang.String endNode) {
+	public void setEndNode( String endNode) {
 		this.endNode = endNode;
 	}
 
-	public java.util.List<com.cross.CreateLinkProviderBody> getProviders() {
+	public java.util.List<CreateLinkProviderBody> getProviders() {
 		return this.providers;
 	}
 
 	public void setProviders(
-			java.util.List<com.cross.CreateLinkProviderBody> providers) {
+			java.util.List<CreateLinkProviderBody> providers) {
 		this.providers = providers;
 	}
 
-	public CreateLinkBody(java.lang.String name, java.lang.String description,
-			java.lang.Integer capacityFull, java.lang.String routingPolicy,
-			java.lang.Integer mainFibrilCount,
-			java.lang.Integer protectionFibrilCount, java.lang.String status,
-			java.lang.String linkType, java.lang.String startNode,
-			java.lang.String endNode,
-			java.util.List<com.cross.CreateLinkProviderBody> providers) {
+	public CreateLinkBody( String name, String description,
+                           Integer capacityFull, String routingPolicy,
+                           Integer mainFibrilCount,
+                           Integer protectionFibrilCount, String status,
+                           String linkType, String startNode,
+                           String endNode,
+                           java.util.List<CreateLinkProviderBody> providers) {
 		this.name = name;
 		this.description = description;
 		this.capacityFull = capacityFull;

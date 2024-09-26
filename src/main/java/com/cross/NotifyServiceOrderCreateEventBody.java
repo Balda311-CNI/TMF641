@@ -8,41 +8,41 @@ public class NotifyServiceOrderCreateEventBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private com.cross.NotifyServiceOrderBody event;
-	private java.lang.String eventType;
+	private NotifyServiceOrderBody event;
+	private String eventType;
 
-	private java.lang.String type;
+	private String type;
 
 	public NotifyServiceOrderCreateEventBody() {
 	}
 
-	public com.cross.NotifyServiceOrderBody getEvent() {
+	public NotifyServiceOrderBody getEvent() {
 		return this.event;
 	}
 
-	public void setEvent(com.cross.NotifyServiceOrderBody event) {
+	public void setEvent( NotifyServiceOrderBody event) {
 		this.event = event;
 	}
 
-	public java.lang.String getEventType() {
+	public String getEventType() {
 		return this.eventType;
 	}
 
-	public void setEventType(java.lang.String eventType) {
+	public void setEventType( String eventType) {
 		this.eventType = eventType;
 	}
 
-	public java.lang.String getType() {
+	public String getType() {
 		return this.type;
 	}
 
-	public void setType(java.lang.String type) {
+	public void setType( String type) {
 		this.type = type;
 	}
 
 	public NotifyServiceOrderCreateEventBody(
-			com.cross.NotifyServiceOrderBody event, java.lang.String eventType,
-			java.lang.String type) {
+			NotifyServiceOrderBody event, String eventType,
+			String type) {
 		this.event = event;
 		this.eventType = eventType;
 		this.type = type;

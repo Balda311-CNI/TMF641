@@ -8,83 +8,83 @@ public class CreateNodeBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
-	private java.lang.String statusDiscriminator;
-	private java.util.List<java.lang.String> parentCrossIds;
-	private java.util.List<java.lang.String> nodeTypeDiscriminators;
-	private java.lang.String geometry;
-	private java.lang.Boolean inheritedGeometry;
+	private String name;
+	private String statusDiscriminator;
+	private java.util.List<String> parentCrossIds;
+	private java.util.List<String> nodeTypeDiscriminators;
+	private String geometry;
+	private Boolean inheritedGeometry;
 
-	private java.util.List<com.cross.CustomAttributeBody> customAttributes;
+	private java.util.List<CustomAttributeBody> customAttributes;
 
 	public CreateNodeBody() {
 	}
 
-	public java.lang.String getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(java.lang.String name) {
+	public void setName( String name) {
 		this.name = name;
 	}
 
-	public java.lang.String getStatusDiscriminator() {
+	public String getStatusDiscriminator() {
 		return this.statusDiscriminator;
 	}
 
-	public void setStatusDiscriminator(java.lang.String statusDiscriminator) {
+	public void setStatusDiscriminator( String statusDiscriminator) {
 		this.statusDiscriminator = statusDiscriminator;
 	}
 
-	public java.util.List<java.lang.String> getParentCrossIds() {
+	public java.util.List<String> getParentCrossIds() {
 		return this.parentCrossIds;
 	}
 
 	public void setParentCrossIds(
-			java.util.List<java.lang.String> parentCrossIds) {
+			java.util.List<String> parentCrossIds) {
 		this.parentCrossIds = parentCrossIds;
 	}
 
-	public java.util.List<java.lang.String> getNodeTypeDiscriminators() {
+	public java.util.List<String> getNodeTypeDiscriminators() {
 		return this.nodeTypeDiscriminators;
 	}
 
 	public void setNodeTypeDiscriminators(
-			java.util.List<java.lang.String> nodeTypeDiscriminators) {
+			java.util.List<String> nodeTypeDiscriminators) {
 		this.nodeTypeDiscriminators = nodeTypeDiscriminators;
 	}
 
-	public java.lang.String getGeometry() {
+	public String getGeometry() {
 		return this.geometry;
 	}
 
-	public void setGeometry(java.lang.String geometry) {
+	public void setGeometry( String geometry) {
 		this.geometry = geometry;
 	}
 
-	public java.lang.Boolean getInheritedGeometry() {
+	public Boolean getInheritedGeometry() {
 		return this.inheritedGeometry;
 	}
 
-	public void setInheritedGeometry(java.lang.Boolean inheritedGeometry) {
+	public void setInheritedGeometry( Boolean inheritedGeometry) {
 		this.inheritedGeometry = inheritedGeometry;
 	}
 
-	public java.util.List<com.cross.CustomAttributeBody> getCustomAttributes() {
+	public java.util.List<CustomAttributeBody> getCustomAttributes() {
 		return this.customAttributes;
 	}
 
 	public void setCustomAttributes(
-			java.util.List<com.cross.CustomAttributeBody> customAttributes) {
+			java.util.List<CustomAttributeBody> customAttributes) {
 		this.customAttributes = customAttributes;
 	}
 
-	public CreateNodeBody(java.lang.String name,
-			java.lang.String statusDiscriminator,
-			java.util.List<java.lang.String> parentCrossIds,
-			java.util.List<java.lang.String> nodeTypeDiscriminators,
-			java.lang.String geometry, java.lang.Boolean inheritedGeometry,
-			java.util.List<com.cross.CustomAttributeBody> customAttributes) {
+	public CreateNodeBody( String name,
+                           String statusDiscriminator,
+                           java.util.List<String> parentCrossIds,
+                           java.util.List<String> nodeTypeDiscriminators,
+                           String geometry, Boolean inheritedGeometry,
+                           java.util.List<CustomAttributeBody> customAttributes) {
 		this.name = name;
 		this.statusDiscriminator = statusDiscriminator;
 		this.parentCrossIds = parentCrossIds;

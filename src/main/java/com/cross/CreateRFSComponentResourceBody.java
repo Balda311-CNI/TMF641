@@ -8,30 +8,30 @@ public class CreateRFSComponentResourceBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String crossId;
-	private java.lang.Boolean primary;
+	private String crossId;
+	private Boolean primary;
 
 	public CreateRFSComponentResourceBody() {
 	}
 
-	public java.lang.String getCrossId() {
+	public String getCrossId() {
 		return this.crossId;
 	}
 
-	public void setCrossId(java.lang.String crossId) {
+	public void setCrossId( String crossId) {
 		this.crossId = crossId;
 	}
 
-	public java.lang.Boolean getPrimary() {
+	public Boolean getPrimary() {
 		return this.primary;
 	}
 
-	public void setPrimary(java.lang.Boolean primary) {
+	public void setPrimary( Boolean primary) {
 		this.primary = primary;
 	}
 
-	public CreateRFSComponentResourceBody(java.lang.String crossId,
-			java.lang.Boolean primary) {
+	public CreateRFSComponentResourceBody( String crossId,
+                                           Boolean primary) {
 		this.crossId = crossId;
 		this.primary = primary;
 	}

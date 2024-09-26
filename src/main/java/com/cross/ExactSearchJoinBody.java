@@ -8,49 +8,49 @@ public class ExactSearchJoinBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String leftRelation;
-	private java.lang.String rightRelation;
-	private java.lang.String filterExpression;
-	private java.lang.Boolean useLeftJoin;
+	private String leftRelation;
+	private String rightRelation;
+	private String filterExpression;
+	private Boolean useLeftJoin;
 
 	public ExactSearchJoinBody() {
 	}
 
-	public java.lang.String getLeftRelation() {
+	public String getLeftRelation() {
 		return this.leftRelation;
 	}
 
-	public void setLeftRelation(java.lang.String leftRelation) {
+	public void setLeftRelation( String leftRelation) {
 		this.leftRelation = leftRelation;
 	}
 
-	public java.lang.String getRightRelation() {
+	public String getRightRelation() {
 		return this.rightRelation;
 	}
 
-	public void setRightRelation(java.lang.String rightRelation) {
+	public void setRightRelation( String rightRelation) {
 		this.rightRelation = rightRelation;
 	}
 
-	public java.lang.String getFilterExpression() {
+	public String getFilterExpression() {
 		return this.filterExpression;
 	}
 
-	public void setFilterExpression(java.lang.String filterExpression) {
+	public void setFilterExpression( String filterExpression) {
 		this.filterExpression = filterExpression;
 	}
 
-	public java.lang.Boolean getUseLeftJoin() {
+	public Boolean getUseLeftJoin() {
 		return this.useLeftJoin;
 	}
 
-	public void setUseLeftJoin(java.lang.Boolean useLeftJoin) {
+	public void setUseLeftJoin( Boolean useLeftJoin) {
 		this.useLeftJoin = useLeftJoin;
 	}
 
-	public ExactSearchJoinBody(java.lang.String leftRelation,
-			java.lang.String rightRelation, java.lang.String filterExpression,
-			java.lang.Boolean useLeftJoin) {
+	public ExactSearchJoinBody( String leftRelation,
+                                String rightRelation, String filterExpression,
+                                Boolean useLeftJoin) {
 		this.leftRelation = leftRelation;
 		this.rightRelation = rightRelation;
 		this.filterExpression = filterExpression;

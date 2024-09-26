@@ -8,58 +8,58 @@ public class CreateLinkProviderBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String providerCrossId;
-	private java.lang.String consumptionType;
-	private java.lang.Boolean reversed;
-	private java.lang.Integer orderNumber;
-	private java.lang.Integer fibrilNumber;
+	private String providerCrossId;
+	private String consumptionType;
+	private Boolean reversed;
+	private Integer orderNumber;
+	private Integer fibrilNumber;
 
 	public CreateLinkProviderBody() {
 	}
 
-	public java.lang.String getProviderCrossId() {
+	public String getProviderCrossId() {
 		return this.providerCrossId;
 	}
 
-	public void setProviderCrossId(java.lang.String providerCrossId) {
+	public void setProviderCrossId( String providerCrossId) {
 		this.providerCrossId = providerCrossId;
 	}
 
-	public java.lang.String getConsumptionType() {
+	public String getConsumptionType() {
 		return this.consumptionType;
 	}
 
-	public void setConsumptionType(java.lang.String consumptionType) {
+	public void setConsumptionType( String consumptionType) {
 		this.consumptionType = consumptionType;
 	}
 
-	public java.lang.Boolean getReversed() {
+	public Boolean getReversed() {
 		return this.reversed;
 	}
 
-	public void setReversed(java.lang.Boolean reversed) {
+	public void setReversed( Boolean reversed) {
 		this.reversed = reversed;
 	}
 
-	public java.lang.Integer getOrderNumber() {
+	public Integer getOrderNumber() {
 		return this.orderNumber;
 	}
 
-	public void setOrderNumber(java.lang.Integer orderNumber) {
+	public void setOrderNumber( Integer orderNumber) {
 		this.orderNumber = orderNumber;
 	}
 
-	public java.lang.Integer getFibrilNumber() {
+	public Integer getFibrilNumber() {
 		return this.fibrilNumber;
 	}
 
-	public void setFibrilNumber(java.lang.Integer fibrilNumber) {
+	public void setFibrilNumber( Integer fibrilNumber) {
 		this.fibrilNumber = fibrilNumber;
 	}
 
-	public CreateLinkProviderBody(java.lang.String providerCrossId,
-			java.lang.String consumptionType, java.lang.Boolean reversed,
-			java.lang.Integer orderNumber, java.lang.Integer fibrilNumber) {
+	public CreateLinkProviderBody( String providerCrossId,
+                                   String consumptionType, Boolean reversed,
+                                   Integer orderNumber, Integer fibrilNumber) {
 		this.providerCrossId = providerCrossId;
 		this.consumptionType = consumptionType;
 		this.reversed = reversed;

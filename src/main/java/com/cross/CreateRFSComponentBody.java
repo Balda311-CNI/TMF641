@@ -8,22 +8,22 @@ public class CreateRFSComponentBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.util.List<com.cross.CreateRFSComponentResourceBody> resources;
+	private java.util.List<CreateRFSComponentResourceBody> resources;
 
 	public CreateRFSComponentBody() {
 	}
 
-	public java.util.List<com.cross.CreateRFSComponentResourceBody> getResources() {
+	public java.util.List<CreateRFSComponentResourceBody> getResources() {
 		return this.resources;
 	}
 
 	public void setResources(
-			java.util.List<com.cross.CreateRFSComponentResourceBody> resources) {
+			java.util.List<CreateRFSComponentResourceBody> resources) {
 		this.resources = resources;
 	}
 
 	public CreateRFSComponentBody(
-			java.util.List<com.cross.CreateRFSComponentResourceBody> resources) {
+			java.util.List<CreateRFSComponentResourceBody> resources) {
 		this.resources = resources;
 	}
 

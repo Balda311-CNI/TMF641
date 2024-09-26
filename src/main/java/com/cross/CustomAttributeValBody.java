@@ -8,39 +8,39 @@ public class CustomAttributeValBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String type;
-	private java.lang.String externalId;
-	private java.lang.String systemId;
+	private String type;
+	private String externalId;
+	private String systemId;
 
 	public CustomAttributeValBody() {
 	}
 
-	public java.lang.String getType() {
+	public String getType() {
 		return this.type;
 	}
 
-	public void setType(java.lang.String type) {
+	public void setType( String type) {
 		this.type = type;
 	}
 
-	public java.lang.String getExternalId() {
+	public String getExternalId() {
 		return this.externalId;
 	}
 
-	public void setExternalId(java.lang.String externalId) {
+	public void setExternalId( String externalId) {
 		this.externalId = externalId;
 	}
 
-	public java.lang.String getSystemId() {
+	public String getSystemId() {
 		return this.systemId;
 	}
 
-	public void setSystemId(java.lang.String systemId) {
+	public void setSystemId( String systemId) {
 		this.systemId = systemId;
 	}
 
-	public CustomAttributeValBody(java.lang.String type,
-			java.lang.String externalId, java.lang.String systemId) {
+	public CustomAttributeValBody( String type,
+                                   String externalId, String systemId) {
 		this.type = type;
 		this.externalId = externalId;
 		this.systemId = systemId;

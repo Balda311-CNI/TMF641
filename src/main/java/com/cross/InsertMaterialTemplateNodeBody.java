@@ -8,40 +8,40 @@ public class InsertMaterialTemplateNodeBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String materialTemplateName;
-	private java.lang.String name;
-	private java.lang.String statusDiscriminator;
+	private String materialTemplateName;
+	private String name;
+	private String statusDiscriminator;
 
 	public InsertMaterialTemplateNodeBody() {
 	}
 
-	public java.lang.String getMaterialTemplateName() {
+	public String getMaterialTemplateName() {
 		return this.materialTemplateName;
 	}
 
-	public void setMaterialTemplateName(java.lang.String materialTemplateName) {
+	public void setMaterialTemplateName( String materialTemplateName) {
 		this.materialTemplateName = materialTemplateName;
 	}
 
-	public java.lang.String getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(java.lang.String name) {
+	public void setName( String name) {
 		this.name = name;
 	}
 
-	public java.lang.String getStatusDiscriminator() {
+	public String getStatusDiscriminator() {
 		return this.statusDiscriminator;
 	}
 
-	public void setStatusDiscriminator(java.lang.String statusDiscriminator) {
+	public void setStatusDiscriminator( String statusDiscriminator) {
 		this.statusDiscriminator = statusDiscriminator;
 	}
 
 	public InsertMaterialTemplateNodeBody(
-			java.lang.String materialTemplateName, java.lang.String name,
-			java.lang.String statusDiscriminator) {
+			String materialTemplateName, String name,
+			String statusDiscriminator) {
 		this.materialTemplateName = materialTemplateName;
 		this.name = name;
 		this.statusDiscriminator = statusDiscriminator;

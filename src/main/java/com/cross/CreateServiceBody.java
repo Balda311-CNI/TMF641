@@ -8,39 +8,39 @@ public class CreateServiceBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
-	private java.lang.String serviceType;
-	private java.lang.String serviceStatus;
+	private String name;
+	private String serviceType;
+	private String serviceStatus;
 
 	public CreateServiceBody() {
 	}
 
-	public java.lang.String getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(java.lang.String name) {
+	public void setName( String name) {
 		this.name = name;
 	}
 
-	public java.lang.String getServiceType() {
+	public String getServiceType() {
 		return this.serviceType;
 	}
 
-	public void setServiceType(java.lang.String serviceType) {
+	public void setServiceType( String serviceType) {
 		this.serviceType = serviceType;
 	}
 
-	public java.lang.String getServiceStatus() {
+	public String getServiceStatus() {
 		return this.serviceStatus;
 	}
 
-	public void setServiceStatus(java.lang.String serviceStatus) {
+	public void setServiceStatus( String serviceStatus) {
 		this.serviceStatus = serviceStatus;
 	}
 
-	public CreateServiceBody(java.lang.String name,
-			java.lang.String serviceType, java.lang.String serviceStatus) {
+	public CreateServiceBody( String name,
+                              String serviceType, String serviceStatus) {
 		this.name = name;
 		this.serviceType = serviceType;
 		this.serviceStatus = serviceStatus;

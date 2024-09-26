@@ -10,30 +10,30 @@ public class CreateServiceFromServiceTemplateBody
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String serviceTemplateName;
-	private java.lang.String name;
+	private String serviceTemplateName;
+	private String name;
 
 	public CreateServiceFromServiceTemplateBody() {
 	}
 
-	public java.lang.String getServiceTemplateName() {
+	public String getServiceTemplateName() {
 		return this.serviceTemplateName;
 	}
 
-	public void setServiceTemplateName(java.lang.String serviceTemplateName) {
+	public void setServiceTemplateName( String serviceTemplateName) {
 		this.serviceTemplateName = serviceTemplateName;
 	}
 
-	public java.lang.String getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(java.lang.String name) {
+	public void setName( String name) {
 		this.name = name;
 	}
 
 	public CreateServiceFromServiceTemplateBody(
-			java.lang.String serviceTemplateName, java.lang.String name) {
+			String serviceTemplateName, String name) {
 		this.serviceTemplateName = serviceTemplateName;
 		this.name = name;
 	}

@@ -8,39 +8,39 @@ public class ErrorBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.Integer code;
-	private java.lang.String message;
-	private java.lang.String task;
+	private Integer code;
+	private String message;
+	private String task;
 
 	public ErrorBody() {
 	}
 
-	public java.lang.Integer getCode() {
+	public Integer getCode() {
 		return this.code;
 	}
 
-	public void setCode(java.lang.Integer code) {
+	public void setCode( Integer code) {
 		this.code = code;
 	}
 
-	public java.lang.String getMessage() {
+	public String getMessage() {
 		return this.message;
 	}
 
-	public void setMessage(java.lang.String message) {
+	public void setMessage( String message) {
 		this.message = message;
 	}
 
-	public java.lang.String getTask() {
+	public String getTask() {
 		return this.task;
 	}
 
-	public void setTask(java.lang.String task) {
+	public void setTask( String task) {
 		this.task = task;
 	}
 
-	public ErrorBody(java.lang.Integer code, java.lang.String message,
-			java.lang.String task) {
+	public ErrorBody( Integer code, String message,
+                      String task) {
 		this.code = code;
 		this.message = message;
 		this.task = task;

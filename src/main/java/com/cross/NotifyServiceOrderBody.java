@@ -8,68 +8,68 @@ public class NotifyServiceOrderBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String type;
-	private java.lang.String id;
-	private com.cross.NotifyErrorMessageBody errorMessage;
-	private java.lang.String state;
-	private java.lang.String pePortName;
-	private java.lang.String rfsCrossId;
+	private String type;
+	private String id;
+	private NotifyErrorMessageBody errorMessage;
+	private String state;
+	private String pePortName;
+	private String rfsCrossId;
 
 	public NotifyServiceOrderBody() {
 	}
 
-	public java.lang.String getType() {
+	public String getType() {
 		return this.type;
 	}
 
-	public void setType(java.lang.String type) {
+	public void setType( String type) {
 		this.type = type;
 	}
 
-	public java.lang.String getId() {
+	public String getId() {
 		return this.id;
 	}
 
-	public void setId(java.lang.String id) {
+	public void setId( String id) {
 		this.id = id;
 	}
 
-	public com.cross.NotifyErrorMessageBody getErrorMessage() {
+	public NotifyErrorMessageBody getErrorMessage() {
 		return this.errorMessage;
 	}
 
-	public void setErrorMessage(com.cross.NotifyErrorMessageBody errorMessage) {
+	public void setErrorMessage( NotifyErrorMessageBody errorMessage) {
 		this.errorMessage = errorMessage;
 	}
 
-	public java.lang.String getState() {
+	public String getState() {
 		return this.state;
 	}
 
-	public void setState(java.lang.String state) {
+	public void setState( String state) {
 		this.state = state;
 	}
 
-	public java.lang.String getPePortName() {
+	public String getPePortName() {
 		return this.pePortName;
 	}
 
-	public void setPePortName( java.lang.String pePortName) {
+	public void setPePortName( String pePortName) {
 		this.pePortName = pePortName;
 	}
 
-	public java.lang.String getRfsCrossId() {
+	public String getRfsCrossId() {
 		return this.rfsCrossId;
 	}
 
-	public void setRfsCrossId( java.lang.String rfsCrossId) {
+	public void setRfsCrossId( String rfsCrossId) {
 		this.rfsCrossId = rfsCrossId;
 	}
 
-	public NotifyServiceOrderBody(java.lang.String type, java.lang.String id,
-								  com.cross.NotifyErrorMessageBody errorMessage,
-								  java.lang.String state, java.lang.String pePortName,
-								  java.lang.String rfsCrossId) {
+	public NotifyServiceOrderBody( String type, String id,
+                                   NotifyErrorMessageBody errorMessage,
+                                   String state, String pePortName,
+                                   String rfsCrossId) {
 		this.type = type;
 		this.id = id;
 		this.errorMessage = errorMessage;

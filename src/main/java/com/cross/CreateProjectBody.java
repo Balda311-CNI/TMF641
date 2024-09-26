@@ -8,108 +8,108 @@ public class CreateProjectBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
-	private java.lang.String creator;
-	private java.lang.String status;
-	private java.lang.String projectTypeDiscriminator;
+	private String name;
+	private String creator;
+	private String status;
+	private String projectTypeDiscriminator;
 
-	private java.lang.String nodePlannedStatusDiscriminator;
+	private String nodePlannedStatusDiscriminator;
 
-	private java.lang.String linkPlannedStatusDiscriminator;
+	private String linkPlannedStatusDiscriminator;
 
-	private java.lang.String rfsPlannedStatusDiscriminator;
+	private String rfsPlannedStatusDiscriminator;
 
-	private java.lang.String rfscPlannedStatusDiscriminator;
+	private String rfscPlannedStatusDiscriminator;
 
-	private java.lang.Boolean autoPlannedStatus;
+	private Boolean autoPlannedStatus;
 
 	public CreateProjectBody() {
 	}
 
-	public java.lang.String getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(java.lang.String name) {
+	public void setName( String name) {
 		this.name = name;
 	}
 
-	public java.lang.String getCreator() {
+	public String getCreator() {
 		return this.creator;
 	}
 
-	public void setCreator(java.lang.String creator) {
+	public void setCreator( String creator) {
 		this.creator = creator;
 	}
 
-	public java.lang.String getStatus() {
+	public String getStatus() {
 		return this.status;
 	}
 
-	public void setStatus(java.lang.String status) {
+	public void setStatus( String status) {
 		this.status = status;
 	}
 
-	public java.lang.String getProjectTypeDiscriminator() {
+	public String getProjectTypeDiscriminator() {
 		return this.projectTypeDiscriminator;
 	}
 
 	public void setProjectTypeDiscriminator(
-			java.lang.String projectTypeDiscriminator) {
+			String projectTypeDiscriminator) {
 		this.projectTypeDiscriminator = projectTypeDiscriminator;
 	}
 
-	public java.lang.String getNodePlannedStatusDiscriminator() {
+	public String getNodePlannedStatusDiscriminator() {
 		return this.nodePlannedStatusDiscriminator;
 	}
 
 	public void setNodePlannedStatusDiscriminator(
-			java.lang.String nodePlannedStatusDiscriminator) {
+			String nodePlannedStatusDiscriminator) {
 		this.nodePlannedStatusDiscriminator = nodePlannedStatusDiscriminator;
 	}
 
-	public java.lang.String getLinkPlannedStatusDiscriminator() {
+	public String getLinkPlannedStatusDiscriminator() {
 		return this.linkPlannedStatusDiscriminator;
 	}
 
 	public void setLinkPlannedStatusDiscriminator(
-			java.lang.String linkPlannedStatusDiscriminator) {
+			String linkPlannedStatusDiscriminator) {
 		this.linkPlannedStatusDiscriminator = linkPlannedStatusDiscriminator;
 	}
 
-	public java.lang.String getRfsPlannedStatusDiscriminator() {
+	public String getRfsPlannedStatusDiscriminator() {
 		return this.rfsPlannedStatusDiscriminator;
 	}
 
 	public void setRfsPlannedStatusDiscriminator(
-			java.lang.String rfsPlannedStatusDiscriminator) {
+			String rfsPlannedStatusDiscriminator) {
 		this.rfsPlannedStatusDiscriminator = rfsPlannedStatusDiscriminator;
 	}
 
-	public java.lang.String getRfscPlannedStatusDiscriminator() {
+	public String getRfscPlannedStatusDiscriminator() {
 		return this.rfscPlannedStatusDiscriminator;
 	}
 
 	public void setRfscPlannedStatusDiscriminator(
-			java.lang.String rfscPlannedStatusDiscriminator) {
+			String rfscPlannedStatusDiscriminator) {
 		this.rfscPlannedStatusDiscriminator = rfscPlannedStatusDiscriminator;
 	}
 
-	public java.lang.Boolean getAutoPlannedStatus() {
+	public Boolean getAutoPlannedStatus() {
 		return this.autoPlannedStatus;
 	}
 
-	public void setAutoPlannedStatus(java.lang.Boolean autoPlannedStatus) {
+	public void setAutoPlannedStatus( Boolean autoPlannedStatus) {
 		this.autoPlannedStatus = autoPlannedStatus;
 	}
 
-	public CreateProjectBody(java.lang.String name, java.lang.String creator,
-			java.lang.String status, java.lang.String projectTypeDiscriminator,
-			java.lang.String nodePlannedStatusDiscriminator,
-			java.lang.String linkPlannedStatusDiscriminator,
-			java.lang.String rfsPlannedStatusDiscriminator,
-			java.lang.String rfscPlannedStatusDiscriminator,
-			java.lang.Boolean autoPlannedStatus) {
+	public CreateProjectBody( String name, String creator,
+                              String status, String projectTypeDiscriminator,
+                              String nodePlannedStatusDiscriminator,
+                              String linkPlannedStatusDiscriminator,
+                              String rfsPlannedStatusDiscriminator,
+                              String rfscPlannedStatusDiscriminator,
+                              Boolean autoPlannedStatus) {
 		this.name = name;
 		this.creator = creator;
 		this.status = status;

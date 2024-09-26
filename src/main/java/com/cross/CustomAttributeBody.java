@@ -8,31 +8,31 @@ public class CustomAttributeBody implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String name;
+	private String name;
 
-	private java.util.List<com.cross.CustomAttributeValBody> val;
+	private java.util.List<CustomAttributeValBody> val;
 
 	public CustomAttributeBody() {
 	}
 
-	public java.lang.String getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(java.lang.String name) {
+	public void setName( String name) {
 		this.name = name;
 	}
 
-	public java.util.List<com.cross.CustomAttributeValBody> getVal() {
+	public java.util.List<CustomAttributeValBody> getVal() {
 		return this.val;
 	}
 
-	public void setVal(java.util.List<com.cross.CustomAttributeValBody> val) {
+	public void setVal(java.util.List<CustomAttributeValBody> val) {
 		this.val = val;
 	}
 
-	public CustomAttributeBody(java.lang.String name,
-			java.util.List<com.cross.CustomAttributeValBody> val) {
+	public CustomAttributeBody( String name,
+                                java.util.List<CustomAttributeValBody> val) {
 		this.name = name;
 		this.val = val;
 	}
