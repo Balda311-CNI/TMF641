@@ -29,7 +29,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>"http://192.168.70.18:8888"</identifier>
+            <identifier>"https://test.oss.globalconnect.net/galileo/cross/api"</identifier>
             <parameters/>
             <name>crossApiBaseUrl</name>
         </global>
@@ -41,7 +41,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>"http://192.168.70.18:8890"</identifier>
+            <identifier>"https://test.oss.globalconnect.net/galileo/cross/gcapi"</identifier>
             <parameters/>
             <name>gcApiBaseUrl</name>
         </global>
