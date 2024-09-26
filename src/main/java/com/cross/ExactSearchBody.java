@@ -6,92 +6,93 @@ package com.cross;
 
 public class ExactSearchBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String entity;
-	private String entityFilterExpression;
-	private java.util.List<ExactSearchJoinBody> joins;
-	private java.util.List<ExactSearchAttributeBody> select;
-	private java.util.List<ExactSearchAttributeBody> orderBy;
-	private Boolean returnTotalCount;
+    private String entity;
+    private String entityFilterExpression;
+    private java.util.List<ExactSearchJoinBody> joins;
+    private java.util.List<ExactSearchAttributeBody> select;
+    private java.util.List<ExactSearchAttributeBody> orderBy;
+    private Boolean returnTotalCount;
 
-	private Integer limit;
+    private Integer limit;
 
-	public ExactSearchBody() {
-	}
-
-	public String getEntity() {
-		return this.entity;
-	}
-
-	public void setEntity( String entity) {
-		this.entity = entity;
-	}
-
-	public java.util.List<ExactSearchJoinBody> getJoins() {
-		return this.joins;
-	}
-
-	public void setJoins(java.util.List<ExactSearchJoinBody> joins) {
-		this.joins = joins;
-	}
-
-	public java.util.List<ExactSearchAttributeBody> getSelect() {
-		return this.select;
-	}
-
-	public void setSelect(
-			java.util.List<ExactSearchAttributeBody> select) {
-		this.select = select;
-	}
-
-	public java.util.List<ExactSearchAttributeBody> getOrderBy() {
-		return this.orderBy;
-	}
-
-	public void setOrderBy(
-			java.util.List<ExactSearchAttributeBody> orderBy) {
-		this.orderBy = orderBy;
-	}
-
-	public Boolean getReturnTotalCount() {
-		return this.returnTotalCount;
-	}
-
-	public void setReturnTotalCount( Boolean returnTotalCount) {
-		this.returnTotalCount = returnTotalCount;
-	}
-
-	public String getEntityFilterExpression() {
-		return this.entityFilterExpression;
-	}
-
-	public void setEntityFilterExpression(
-			String entityFilterExpression) {
-		this.entityFilterExpression = entityFilterExpression;
-	}
-
-	public Integer getLimit() {
-		return this.limit;
-	}
-
-	public void setLimit( Integer limit) {
-		this.limit = limit;
-	}
-
-	public ExactSearchBody( String entity,
+    public ExactSearchBody( String entity,
                             String entityFilterExpression,
                             java.util.List<ExactSearchJoinBody> joins,
                             java.util.List<ExactSearchAttributeBody> select,
                             java.util.List<ExactSearchAttributeBody> orderBy,
-                            Boolean returnTotalCount, Integer limit) {
-		this.entity = entity;
-		this.entityFilterExpression = entityFilterExpression;
-		this.joins = joins;
-		this.select = select;
-		this.orderBy = orderBy;
-		this.returnTotalCount = returnTotalCount;
-		this.limit = limit;
-	}
+                            Boolean returnTotalCount,
+                            Integer limit ) {
+        this.entity = entity;
+        this.entityFilterExpression = entityFilterExpression;
+        this.joins = joins;
+        this.select = select;
+        this.orderBy = orderBy;
+        this.returnTotalCount = returnTotalCount;
+        this.limit = limit;
+    }
+
+    public String getEntity() {
+        return this.entity;
+    }
+
+    public void setEntity( String entity ) {
+        this.entity = entity;
+    }
+
+    public java.util.List<ExactSearchJoinBody> getJoins() {
+        return this.joins;
+    }
+
+    public void setJoins( java.util.List<ExactSearchJoinBody> joins ) {
+        this.joins = joins;
+    }
+
+    public java.util.List<ExactSearchAttributeBody> getSelect() {
+        return this.select;
+    }
+
+    public void setSelect( java.util.List<ExactSearchAttributeBody> select ) {
+        this.select = select;
+    }
+
+    public java.util.List<ExactSearchAttributeBody> getOrderBy() {
+        return this.orderBy;
+    }
+
+    public void setOrderBy( java.util.List<ExactSearchAttributeBody> orderBy ) {
+        this.orderBy = orderBy;
+    }
+
+    public Boolean getReturnTotalCount() {
+        return this.returnTotalCount;
+    }
+
+    public void setReturnTotalCount( Boolean returnTotalCount ) {
+        this.returnTotalCount = returnTotalCount;
+    }
+
+    public String getEntityFilterExpression() {
+        return this.entityFilterExpression;
+    }
+
+    public void setEntityFilterExpression( String entityFilterExpression ) {
+        this.entityFilterExpression = entityFilterExpression;
+    }
+
+    public Integer getLimit() {
+        return this.limit;
+    }
+
+    public void setLimit( Integer limit ) {
+        this.limit = limit;
+    }
+
+    @Override
+    public String toString() {
+        return "ExactSearchBody{" + "entity='" + entity + '\'' + ", entityFilterExpression='" + entityFilterExpression + '\'' + ", joins=" + joins +
+               ", select=" + select + ", orderBy=" + orderBy + ", returnTotalCount=" + returnTotalCount + ", limit=" + limit + '}';
+    }
 
 }

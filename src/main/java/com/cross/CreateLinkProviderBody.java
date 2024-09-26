@@ -6,65 +6,66 @@ package com.cross;
 
 public class CreateLinkProviderBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String providerCrossId;
-	private String consumptionType;
-	private Boolean reversed;
-	private Integer orderNumber;
-	private Integer fibrilNumber;
+    private String providerCrossId;
+    private String consumptionType;
+    private Boolean reversed;
+    private Integer orderNumber;
+    private Integer fibrilNumber;
 
-	public CreateLinkProviderBody() {
-	}
+    public CreateLinkProviderBody( String providerCrossId, String consumptionType, Boolean reversed, Integer orderNumber, Integer fibrilNumber ) {
+        this.providerCrossId = providerCrossId;
+        this.consumptionType = consumptionType;
+        this.reversed = reversed;
+        this.orderNumber = orderNumber;
+        this.fibrilNumber = fibrilNumber;
+    }
 
-	public String getProviderCrossId() {
-		return this.providerCrossId;
-	}
+    public String getProviderCrossId() {
+        return this.providerCrossId;
+    }
 
-	public void setProviderCrossId( String providerCrossId) {
-		this.providerCrossId = providerCrossId;
-	}
+    public void setProviderCrossId( String providerCrossId ) {
+        this.providerCrossId = providerCrossId;
+    }
 
-	public String getConsumptionType() {
-		return this.consumptionType;
-	}
+    public String getConsumptionType() {
+        return this.consumptionType;
+    }
 
-	public void setConsumptionType( String consumptionType) {
-		this.consumptionType = consumptionType;
-	}
+    public void setConsumptionType( String consumptionType ) {
+        this.consumptionType = consumptionType;
+    }
 
-	public Boolean getReversed() {
-		return this.reversed;
-	}
+    public Boolean getReversed() {
+        return this.reversed;
+    }
 
-	public void setReversed( Boolean reversed) {
-		this.reversed = reversed;
-	}
+    public void setReversed( Boolean reversed ) {
+        this.reversed = reversed;
+    }
 
-	public Integer getOrderNumber() {
-		return this.orderNumber;
-	}
+    public Integer getOrderNumber() {
+        return this.orderNumber;
+    }
 
-	public void setOrderNumber( Integer orderNumber) {
-		this.orderNumber = orderNumber;
-	}
+    public void setOrderNumber( Integer orderNumber ) {
+        this.orderNumber = orderNumber;
+    }
 
-	public Integer getFibrilNumber() {
-		return this.fibrilNumber;
-	}
+    public Integer getFibrilNumber() {
+        return this.fibrilNumber;
+    }
 
-	public void setFibrilNumber( Integer fibrilNumber) {
-		this.fibrilNumber = fibrilNumber;
-	}
+    public void setFibrilNumber( Integer fibrilNumber ) {
+        this.fibrilNumber = fibrilNumber;
+    }
 
-	public CreateLinkProviderBody( String providerCrossId,
-                                   String consumptionType, Boolean reversed,
-                                   Integer orderNumber, Integer fibrilNumber) {
-		this.providerCrossId = providerCrossId;
-		this.consumptionType = consumptionType;
-		this.reversed = reversed;
-		this.orderNumber = orderNumber;
-		this.fibrilNumber = fibrilNumber;
-	}
+    @Override
+    public String toString() {
+        return "CreateLinkProviderBody{" + "consumptionType='" + consumptionType + '\'' + ", providerCrossId='" + providerCrossId + '\'' + ", reversed=" +
+               reversed + ", orderNumber=" + orderNumber + ", fibrilNumber=" + fibrilNumber + '}';
+    }
 
 }

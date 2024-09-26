@@ -6,34 +6,35 @@ package com.cross;
 
 public class CreateRFSComponentResourceBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String crossId;
-	private Boolean primary;
+    private String crossId;
+    private Boolean primary;
 
-	public CreateRFSComponentResourceBody() {
-	}
+    public CreateRFSComponentResourceBody( String crossId, Boolean primary ) {
+        this.crossId = crossId;
+        this.primary = primary;
+    }
 
-	public String getCrossId() {
-		return this.crossId;
-	}
+    public String getCrossId() {
+        return this.crossId;
+    }
 
-	public void setCrossId( String crossId) {
-		this.crossId = crossId;
-	}
+    public void setCrossId( String crossId ) {
+        this.crossId = crossId;
+    }
 
-	public Boolean getPrimary() {
-		return this.primary;
-	}
+    public Boolean getPrimary() {
+        return this.primary;
+    }
 
-	public void setPrimary( Boolean primary) {
-		this.primary = primary;
-	}
+    public void setPrimary( Boolean primary ) {
+        this.primary = primary;
+    }
 
-	public CreateRFSComponentResourceBody( String crossId,
-                                           Boolean primary) {
-		this.crossId = crossId;
-		this.primary = primary;
-	}
+    @Override
+    public String toString() {
+        return "CreateRFSComponentResourceBody{" + "crossId='" + crossId + '\'' + ", primary=" + primary + '}';
+    }
 
 }

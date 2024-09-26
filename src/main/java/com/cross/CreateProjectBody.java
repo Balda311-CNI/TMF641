@@ -6,119 +6,122 @@ package com.cross;
 
 public class CreateProjectBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String name;
-	private String creator;
-	private String status;
-	private String projectTypeDiscriminator;
+    private String name;
+    private String creator;
+    private String status;
+    private String projectTypeDiscriminator;
 
-	private String nodePlannedStatusDiscriminator;
+    private String nodePlannedStatusDiscriminator;
 
-	private String linkPlannedStatusDiscriminator;
+    private String linkPlannedStatusDiscriminator;
 
-	private String rfsPlannedStatusDiscriminator;
+    private String rfsPlannedStatusDiscriminator;
 
-	private String rfscPlannedStatusDiscriminator;
+    private String rfscPlannedStatusDiscriminator;
 
-	private Boolean autoPlannedStatus;
+    private Boolean autoPlannedStatus;
 
-	public CreateProjectBody() {
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public void setName( String name) {
-		this.name = name;
-	}
-
-	public String getCreator() {
-		return this.creator;
-	}
-
-	public void setCreator( String creator) {
-		this.creator = creator;
-	}
-
-	public String getStatus() {
-		return this.status;
-	}
-
-	public void setStatus( String status) {
-		this.status = status;
-	}
-
-	public String getProjectTypeDiscriminator() {
-		return this.projectTypeDiscriminator;
-	}
-
-	public void setProjectTypeDiscriminator(
-			String projectTypeDiscriminator) {
-		this.projectTypeDiscriminator = projectTypeDiscriminator;
-	}
-
-	public String getNodePlannedStatusDiscriminator() {
-		return this.nodePlannedStatusDiscriminator;
-	}
-
-	public void setNodePlannedStatusDiscriminator(
-			String nodePlannedStatusDiscriminator) {
-		this.nodePlannedStatusDiscriminator = nodePlannedStatusDiscriminator;
-	}
-
-	public String getLinkPlannedStatusDiscriminator() {
-		return this.linkPlannedStatusDiscriminator;
-	}
-
-	public void setLinkPlannedStatusDiscriminator(
-			String linkPlannedStatusDiscriminator) {
-		this.linkPlannedStatusDiscriminator = linkPlannedStatusDiscriminator;
-	}
-
-	public String getRfsPlannedStatusDiscriminator() {
-		return this.rfsPlannedStatusDiscriminator;
-	}
-
-	public void setRfsPlannedStatusDiscriminator(
-			String rfsPlannedStatusDiscriminator) {
-		this.rfsPlannedStatusDiscriminator = rfsPlannedStatusDiscriminator;
-	}
-
-	public String getRfscPlannedStatusDiscriminator() {
-		return this.rfscPlannedStatusDiscriminator;
-	}
-
-	public void setRfscPlannedStatusDiscriminator(
-			String rfscPlannedStatusDiscriminator) {
-		this.rfscPlannedStatusDiscriminator = rfscPlannedStatusDiscriminator;
-	}
-
-	public Boolean getAutoPlannedStatus() {
-		return this.autoPlannedStatus;
-	}
-
-	public void setAutoPlannedStatus( Boolean autoPlannedStatus) {
-		this.autoPlannedStatus = autoPlannedStatus;
-	}
-
-	public CreateProjectBody( String name, String creator,
-                              String status, String projectTypeDiscriminator,
+    public CreateProjectBody( String name,
+                              String creator,
+                              String status,
+                              String projectTypeDiscriminator,
                               String nodePlannedStatusDiscriminator,
                               String linkPlannedStatusDiscriminator,
                               String rfsPlannedStatusDiscriminator,
                               String rfscPlannedStatusDiscriminator,
-                              Boolean autoPlannedStatus) {
-		this.name = name;
-		this.creator = creator;
-		this.status = status;
-		this.projectTypeDiscriminator = projectTypeDiscriminator;
-		this.nodePlannedStatusDiscriminator = nodePlannedStatusDiscriminator;
-		this.linkPlannedStatusDiscriminator = linkPlannedStatusDiscriminator;
-		this.rfsPlannedStatusDiscriminator = rfsPlannedStatusDiscriminator;
-		this.rfscPlannedStatusDiscriminator = rfscPlannedStatusDiscriminator;
-		this.autoPlannedStatus = autoPlannedStatus;
-	}
+                              Boolean autoPlannedStatus ) {
+        this.name = name;
+        this.creator = creator;
+        this.status = status;
+        this.projectTypeDiscriminator = projectTypeDiscriminator;
+        this.nodePlannedStatusDiscriminator = nodePlannedStatusDiscriminator;
+        this.linkPlannedStatusDiscriminator = linkPlannedStatusDiscriminator;
+        this.rfsPlannedStatusDiscriminator = rfsPlannedStatusDiscriminator;
+        this.rfscPlannedStatusDiscriminator = rfscPlannedStatusDiscriminator;
+        this.autoPlannedStatus = autoPlannedStatus;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName( String name ) {
+        this.name = name;
+    }
+
+    public String getCreator() {
+        return this.creator;
+    }
+
+    public void setCreator( String creator ) {
+        this.creator = creator;
+    }
+
+    public String getStatus() {
+        return this.status;
+    }
+
+    public void setStatus( String status ) {
+        this.status = status;
+    }
+
+    public String getProjectTypeDiscriminator() {
+        return this.projectTypeDiscriminator;
+    }
+
+    public void setProjectTypeDiscriminator( String projectTypeDiscriminator ) {
+        this.projectTypeDiscriminator = projectTypeDiscriminator;
+    }
+
+    public String getNodePlannedStatusDiscriminator() {
+        return this.nodePlannedStatusDiscriminator;
+    }
+
+    public void setNodePlannedStatusDiscriminator( String nodePlannedStatusDiscriminator ) {
+        this.nodePlannedStatusDiscriminator = nodePlannedStatusDiscriminator;
+    }
+
+    public String getLinkPlannedStatusDiscriminator() {
+        return this.linkPlannedStatusDiscriminator;
+    }
+
+    public void setLinkPlannedStatusDiscriminator( String linkPlannedStatusDiscriminator ) {
+        this.linkPlannedStatusDiscriminator = linkPlannedStatusDiscriminator;
+    }
+
+    public String getRfsPlannedStatusDiscriminator() {
+        return this.rfsPlannedStatusDiscriminator;
+    }
+
+    public void setRfsPlannedStatusDiscriminator( String rfsPlannedStatusDiscriminator ) {
+        this.rfsPlannedStatusDiscriminator = rfsPlannedStatusDiscriminator;
+    }
+
+    public String getRfscPlannedStatusDiscriminator() {
+        return this.rfscPlannedStatusDiscriminator;
+    }
+
+    public void setRfscPlannedStatusDiscriminator( String rfscPlannedStatusDiscriminator ) {
+        this.rfscPlannedStatusDiscriminator = rfscPlannedStatusDiscriminator;
+    }
+
+    public Boolean getAutoPlannedStatus() {
+        return this.autoPlannedStatus;
+    }
+
+    public void setAutoPlannedStatus( Boolean autoPlannedStatus ) {
+        this.autoPlannedStatus = autoPlannedStatus;
+    }
+
+    @Override
+    public String toString() {
+        return "CreateProjectBody{" + "autoPlannedStatus=" + autoPlannedStatus + ", name='" + name + '\'' + ", creator='" + creator + '\'' + ", status='" +
+               status + '\'' + ", projectTypeDiscriminator='" + projectTypeDiscriminator + '\'' + ", nodePlannedStatusDiscriminator='" +
+               nodePlannedStatusDiscriminator + '\'' + ", linkPlannedStatusDiscriminator='" + linkPlannedStatusDiscriminator + '\'' +
+               ", rfsPlannedStatusDiscriminator='" + rfsPlannedStatusDiscriminator + '\'' + ", rfscPlannedStatusDiscriminator='" +
+               rfscPlannedStatusDiscriminator + '\'' + '}';
+    }
 
 }

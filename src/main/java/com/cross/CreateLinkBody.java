@@ -6,131 +6,138 @@ package com.cross;
 
 public class CreateLinkBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String name;
-	private String description;
-	private Integer capacityFull;
-	private String routingPolicy;
-	private Integer mainFibrilCount;
-	private Integer protectionFibrilCount;
-	private String status;
-	private String linkType;
-	private String startNode;
-	private String endNode;
+    private String name;
+    private String description;
+    private Integer capacityFull;
+    private String routingPolicy;
+    private Integer mainFibrilCount;
+    private Integer protectionFibrilCount;
+    private String status;
+    private String linkType;
+    private String startNode;
+    private String endNode;
 
-	private java.util.List<CreateLinkProviderBody> providers;
+    private java.util.List<CreateLinkProviderBody> providers;
 
-	public CreateLinkBody() {
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public void setName( String name) {
-		this.name = name;
-	}
-
-	public String getDescription() {
-		return this.description;
-	}
-
-	public void setDescription( String description) {
-		this.description = description;
-	}
-
-	public Integer getCapacityFull() {
-		return this.capacityFull;
-	}
-
-	public void setCapacityFull( Integer capacityFull) {
-		this.capacityFull = capacityFull;
-	}
-
-	public String getRoutingPolicy() {
-		return this.routingPolicy;
-	}
-
-	public void setRoutingPolicy( String routingPolicy) {
-		this.routingPolicy = routingPolicy;
-	}
-
-	public Integer getMainFibrilCount() {
-		return this.mainFibrilCount;
-	}
-
-	public void setMainFibrilCount( Integer mainFibrilCount) {
-		this.mainFibrilCount = mainFibrilCount;
-	}
-
-	public Integer getProtectionFibrilCount() {
-		return this.protectionFibrilCount;
-	}
-
-	public void setProtectionFibrilCount( Integer protectionFibrilCount) {
-		this.protectionFibrilCount = protectionFibrilCount;
-	}
-
-	public String getStatus() {
-		return this.status;
-	}
-
-	public void setStatus( String status) {
-		this.status = status;
-	}
-
-	public String getLinkType() {
-		return this.linkType;
-	}
-
-	public void setLinkType( String linkType) {
-		this.linkType = linkType;
-	}
-
-	public String getStartNode() {
-		return this.startNode;
-	}
-
-	public void setStartNode( String startNode) {
-		this.startNode = startNode;
-	}
-
-	public String getEndNode() {
-		return this.endNode;
-	}
-
-	public void setEndNode( String endNode) {
-		this.endNode = endNode;
-	}
-
-	public java.util.List<CreateLinkProviderBody> getProviders() {
-		return this.providers;
-	}
-
-	public void setProviders(
-			java.util.List<CreateLinkProviderBody> providers) {
-		this.providers = providers;
-	}
-
-	public CreateLinkBody( String name, String description,
-                           Integer capacityFull, String routingPolicy,
+    public CreateLinkBody( String name,
+                           String description,
+                           Integer capacityFull,
+                           String routingPolicy,
                            Integer mainFibrilCount,
-                           Integer protectionFibrilCount, String status,
-                           String linkType, String startNode,
+                           Integer protectionFibrilCount,
+                           String status,
+                           String linkType,
+                           String startNode,
                            String endNode,
-                           java.util.List<CreateLinkProviderBody> providers) {
-		this.name = name;
-		this.description = description;
-		this.capacityFull = capacityFull;
-		this.routingPolicy = routingPolicy;
-		this.mainFibrilCount = mainFibrilCount;
-		this.protectionFibrilCount = protectionFibrilCount;
-		this.status = status;
-		this.linkType = linkType;
-		this.startNode = startNode;
-		this.endNode = endNode;
-		this.providers = providers;
-	}
+                           java.util.List<CreateLinkProviderBody> providers ) {
+        this.name = name;
+        this.description = description;
+        this.capacityFull = capacityFull;
+        this.routingPolicy = routingPolicy;
+        this.mainFibrilCount = mainFibrilCount;
+        this.protectionFibrilCount = protectionFibrilCount;
+        this.status = status;
+        this.linkType = linkType;
+        this.startNode = startNode;
+        this.endNode = endNode;
+        this.providers = providers;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName( String name ) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public void setDescription( String description ) {
+        this.description = description;
+    }
+
+    public Integer getCapacityFull() {
+        return this.capacityFull;
+    }
+
+    public void setCapacityFull( Integer capacityFull ) {
+        this.capacityFull = capacityFull;
+    }
+
+    public String getRoutingPolicy() {
+        return this.routingPolicy;
+    }
+
+    public void setRoutingPolicy( String routingPolicy ) {
+        this.routingPolicy = routingPolicy;
+    }
+
+    public Integer getMainFibrilCount() {
+        return this.mainFibrilCount;
+    }
+
+    public void setMainFibrilCount( Integer mainFibrilCount ) {
+        this.mainFibrilCount = mainFibrilCount;
+    }
+
+    public Integer getProtectionFibrilCount() {
+        return this.protectionFibrilCount;
+    }
+
+    public void setProtectionFibrilCount( Integer protectionFibrilCount ) {
+        this.protectionFibrilCount = protectionFibrilCount;
+    }
+
+    public String getStatus() {
+        return this.status;
+    }
+
+    public void setStatus( String status ) {
+        this.status = status;
+    }
+
+    public String getLinkType() {
+        return this.linkType;
+    }
+
+    public void setLinkType( String linkType ) {
+        this.linkType = linkType;
+    }
+
+    public String getStartNode() {
+        return this.startNode;
+    }
+
+    public void setStartNode( String startNode ) {
+        this.startNode = startNode;
+    }
+
+    public String getEndNode() {
+        return this.endNode;
+    }
+
+    public void setEndNode( String endNode ) {
+        this.endNode = endNode;
+    }
+
+    public java.util.List<CreateLinkProviderBody> getProviders() {
+        return this.providers;
+    }
+
+    public void setProviders( java.util.List<CreateLinkProviderBody> providers ) {
+        this.providers = providers;
+    }
+
+    @Override
+    public String toString() {
+        return "CreateLinkBody{" + "capacityFull=" + capacityFull + ", name='" + name + '\'' + ", description='" + description + '\'' + ", routingPolicy='" +
+               routingPolicy + '\'' + ", mainFibrilCount=" + mainFibrilCount + ", protectionFibrilCount=" + protectionFibrilCount + ", status='" + status +
+               '\'' + ", linkType='" + linkType + '\'' + ", startNode='" + startNode + '\'' + ", endNode='" + endNode + '\'' + ", providers=" + providers + '}';
+    }
 
 }

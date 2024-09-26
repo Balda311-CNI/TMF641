@@ -6,54 +6,56 @@ package com.cross;
 
 public class NotifyErrorMessageBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String type;
-	private String code;
-	private String message;
-	private String reason;
+    private String type;
+    private String code;
+    private String message;
+    private String reason;
 
-	public NotifyErrorMessageBody() {
-	}
+    public NotifyErrorMessageBody( String type, String code, String message, String reason ) {
+        this.type = type;
+        this.code = code;
+        this.message = message;
+        this.reason = reason;
+    }
 
-	public String getType() {
-		return this.type;
-	}
+    public String getType() {
+        return this.type;
+    }
 
-	public void setType( String type) {
-		this.type = type;
-	}
+    public void setType( String type ) {
+        this.type = type;
+    }
 
-	public String getCode() {
-		return this.code;
-	}
+    public String getCode() {
+        return this.code;
+    }
 
-	public void setCode( String code) {
-		this.code = code;
-	}
+    public void setCode( String code ) {
+        this.code = code;
+    }
 
-	public String getMessage() {
-		return this.message;
-	}
+    public String getMessage() {
+        return this.message;
+    }
 
-	public void setMessage( String message) {
-		this.message = message;
-	}
+    public void setMessage( String message ) {
+        this.message = message;
+    }
 
-	public String getReason() {
-		return this.reason;
-	}
+    public String getReason() {
+        return this.reason;
+    }
 
-	public void setReason( String reason) {
-		this.reason = reason;
-	}
+    public void setReason( String reason ) {
+        this.reason = reason;
+    }
 
-	public NotifyErrorMessageBody( String type, String code,
-                                   String message, String reason) {
-		this.type = type;
-		this.code = code;
-		this.message = message;
-		this.reason = reason;
-	}
+    @Override
+    public String toString() {
+        return "NotifyErrorMessageBody{" + "code='" + code + '\'' + ", type='" + type + '\'' + ", message='" + message + '\'' + ", reason='" + reason + '\'' +
+               '}';
+    }
 
 }

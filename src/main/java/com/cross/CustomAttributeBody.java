@@ -6,35 +6,36 @@ package com.cross;
 
 public class CustomAttributeBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String name;
+    private String name;
 
-	private java.util.List<CustomAttributeValBody> val;
+    private java.util.List<CustomAttributeValBody> val;
 
-	public CustomAttributeBody() {
-	}
+    public CustomAttributeBody( String name, java.util.List<CustomAttributeValBody> val ) {
+        this.name = name;
+        this.val = val;
+    }
 
-	public String getName() {
-		return this.name;
-	}
+    public String getName() {
+        return this.name;
+    }
 
-	public void setName( String name) {
-		this.name = name;
-	}
+    public void setName( String name ) {
+        this.name = name;
+    }
 
-	public java.util.List<CustomAttributeValBody> getVal() {
-		return this.val;
-	}
+    public java.util.List<CustomAttributeValBody> getVal() {
+        return this.val;
+    }
 
-	public void setVal(java.util.List<CustomAttributeValBody> val) {
-		this.val = val;
-	}
+    public void setVal( java.util.List<CustomAttributeValBody> val ) {
+        this.val = val;
+    }
 
-	public CustomAttributeBody( String name,
-                                java.util.List<CustomAttributeValBody> val) {
-		this.name = name;
-		this.val = val;
-	}
+    @Override
+    public String toString() {
+        return "CustomAttributeBody{" + "name='" + name + '\'' + ", val=" + val + '}';
+    }
 
 }

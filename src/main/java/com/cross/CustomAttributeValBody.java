@@ -6,44 +6,45 @@ package com.cross;
 
 public class CustomAttributeValBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String type;
-	private String externalId;
-	private String systemId;
+    private String type;
+    private String externalId;
+    private String systemId;
 
-	public CustomAttributeValBody() {
-	}
+    public CustomAttributeValBody( String type, String externalId, String systemId ) {
+        this.type = type;
+        this.externalId = externalId;
+        this.systemId = systemId;
+    }
 
-	public String getType() {
-		return this.type;
-	}
+    public String getType() {
+        return this.type;
+    }
 
-	public void setType( String type) {
-		this.type = type;
-	}
+    public void setType( String type ) {
+        this.type = type;
+    }
 
-	public String getExternalId() {
-		return this.externalId;
-	}
+    public String getExternalId() {
+        return this.externalId;
+    }
 
-	public void setExternalId( String externalId) {
-		this.externalId = externalId;
-	}
+    public void setExternalId( String externalId ) {
+        this.externalId = externalId;
+    }
 
-	public String getSystemId() {
-		return this.systemId;
-	}
+    public String getSystemId() {
+        return this.systemId;
+    }
 
-	public void setSystemId( String systemId) {
-		this.systemId = systemId;
-	}
+    public void setSystemId( String systemId ) {
+        this.systemId = systemId;
+    }
 
-	public CustomAttributeValBody( String type,
-                                   String externalId, String systemId) {
-		this.type = type;
-		this.externalId = externalId;
-		this.systemId = systemId;
-	}
+    @Override
+    public String toString() {
+        return "CustomAttributeValBody{" + "externalId='" + externalId + '\'' + ", type='" + type + '\'' + ", systemId='" + systemId + '\'' + '}';
+    }
 
 }

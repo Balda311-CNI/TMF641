@@ -6,82 +6,82 @@ package com.cross;
 
 public class NotifyEventBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Notification type")
-	private String type;
-	@org.kie.api.definition.type.Label("Notification event state")
-	private String state;
-	@org.kie.api.definition.type.Label("Name of the project")
-	private String projectName;
-	@org.kie.api.definition.type.Label("Resource facing service CROSS ID")
-	private String rfsCrossId;
-	@org.kie.api.definition.type.Label("Name of the allocated PE port")
-	private String pePortName;
+    @org.kie.api.definition.type.Label( "Notification type" )
+    private String type;
+    @org.kie.api.definition.type.Label( "Notification event state" )
+    private String state;
+    @org.kie.api.definition.type.Label( "Name of the project" )
+    private String projectName;
+    @org.kie.api.definition.type.Label( "Resource facing service CROSS ID" )
+    private String rfsCrossId;
+    @org.kie.api.definition.type.Label( "Name of the allocated PE port" )
+    private String pePortName;
 
-	private NotifyErrorMessageBody errorMessage;
+    private NotifyErrorMessageBody errorMessage;
 
-	public NotifyEventBody() {
-	}
+    public NotifyEventBody( String type, String state, String projectName, String rfsCrossId, String pePortName, NotifyErrorMessageBody errorMessage ) {
+        this.type = type;
+        this.state = state;
+        this.projectName = projectName;
+        this.rfsCrossId = rfsCrossId;
+        this.pePortName = pePortName;
+        this.errorMessage = errorMessage;
+    }
 
-	public String getType() {
-		return this.type;
-	}
+    public String getType() {
+        return this.type;
+    }
 
-	public void setType( String type) {
-		this.type = type;
-	}
+    public void setType( String type ) {
+        this.type = type;
+    }
 
-	public String getState() {
-		return this.state;
-	}
+    public String getState() {
+        return this.state;
+    }
 
-	public void setState( String state) {
-		this.state = state;
-	}
+    public void setState( String state ) {
+        this.state = state;
+    }
 
-	public String getProjectName() {
-		return this.projectName;
-	}
+    public String getProjectName() {
+        return this.projectName;
+    }
 
-	public void setProjectName( String projectName) {
-		this.projectName = projectName;
-	}
+    public void setProjectName( String projectName ) {
+        this.projectName = projectName;
+    }
 
-	public String getRfsCrossId() {
-		return this.rfsCrossId;
-	}
+    public String getRfsCrossId() {
+        return this.rfsCrossId;
+    }
 
-	public void setRfsCrossId( String rfsCrossId) {
-		this.rfsCrossId = rfsCrossId;
-	}
+    public void setRfsCrossId( String rfsCrossId ) {
+        this.rfsCrossId = rfsCrossId;
+    }
 
-	public String getPePortName() {
-		return this.pePortName;
-	}
+    public String getPePortName() {
+        return this.pePortName;
+    }
 
-	public void setPePortName( String pePortName) {
-		this.pePortName = pePortName;
-	}
+    public void setPePortName( String pePortName ) {
+        this.pePortName = pePortName;
+    }
 
-	public NotifyErrorMessageBody getErrorMessage() {
-		return this.errorMessage;
-	}
+    public NotifyErrorMessageBody getErrorMessage() {
+        return this.errorMessage;
+    }
 
-	public void setErrorMessage( NotifyErrorMessageBody errorMessage) {
-		this.errorMessage = errorMessage;
-	}
+    public void setErrorMessage( NotifyErrorMessageBody errorMessage ) {
+        this.errorMessage = errorMessage;
+    }
 
-	public NotifyEventBody( String type, String state,
-                            String projectName, String rfsCrossId,
-                            String pePortName,
-                            NotifyErrorMessageBody errorMessage) {
-		this.type = type;
-		this.state = state;
-		this.projectName = projectName;
-		this.rfsCrossId = rfsCrossId;
-		this.pePortName = pePortName;
-		this.errorMessage = errorMessage;
-	}
+    @Override
+    public String toString() {
+        return "NotifyEventBody{" + "errorMessage=" + errorMessage + ", type='" + type + '\'' + ", state='" + state + '\'' + ", projectName='" + projectName +
+               '\'' + ", rfsCrossId='" + rfsCrossId + '\'' + ", pePortName='" + pePortName + '\'' + '}';
+    }
 
 }

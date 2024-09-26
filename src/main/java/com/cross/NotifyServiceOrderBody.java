@@ -6,76 +6,76 @@ package com.cross;
 
 public class NotifyServiceOrderBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String type;
-	private String id;
-	private NotifyErrorMessageBody errorMessage;
-	private String state;
-	private String pePortName;
-	private String rfsCrossId;
+    private String type;
+    private String id;
+    private NotifyErrorMessageBody errorMessage;
+    private String state;
+    private String pePortName;
+    private String rfsCrossId;
 
-	public NotifyServiceOrderBody() {
-	}
+    public NotifyServiceOrderBody( String type, String id, NotifyErrorMessageBody errorMessage, String state, String pePortName, String rfsCrossId ) {
+        this.type = type;
+        this.id = id;
+        this.errorMessage = errorMessage;
+        this.state = state;
+        this.pePortName = pePortName;
+        this.rfsCrossId = rfsCrossId;
+    }
 
-	public String getType() {
-		return this.type;
-	}
+    public String getType() {
+        return this.type;
+    }
 
-	public void setType( String type) {
-		this.type = type;
-	}
+    public void setType( String type ) {
+        this.type = type;
+    }
 
-	public String getId() {
-		return this.id;
-	}
+    public String getId() {
+        return this.id;
+    }
 
-	public void setId( String id) {
-		this.id = id;
-	}
+    public void setId( String id ) {
+        this.id = id;
+    }
 
-	public NotifyErrorMessageBody getErrorMessage() {
-		return this.errorMessage;
-	}
+    public NotifyErrorMessageBody getErrorMessage() {
+        return this.errorMessage;
+    }
 
-	public void setErrorMessage( NotifyErrorMessageBody errorMessage) {
-		this.errorMessage = errorMessage;
-	}
+    public void setErrorMessage( NotifyErrorMessageBody errorMessage ) {
+        this.errorMessage = errorMessage;
+    }
 
-	public String getState() {
-		return this.state;
-	}
+    public String getState() {
+        return this.state;
+    }
 
-	public void setState( String state) {
-		this.state = state;
-	}
+    public void setState( String state ) {
+        this.state = state;
+    }
 
-	public String getPePortName() {
-		return this.pePortName;
-	}
+    public String getPePortName() {
+        return this.pePortName;
+    }
 
-	public void setPePortName( String pePortName) {
-		this.pePortName = pePortName;
-	}
+    public void setPePortName( String pePortName ) {
+        this.pePortName = pePortName;
+    }
 
-	public String getRfsCrossId() {
-		return this.rfsCrossId;
-	}
+    public String getRfsCrossId() {
+        return this.rfsCrossId;
+    }
 
-	public void setRfsCrossId( String rfsCrossId) {
-		this.rfsCrossId = rfsCrossId;
-	}
+    public void setRfsCrossId( String rfsCrossId ) {
+        this.rfsCrossId = rfsCrossId;
+    }
 
-	public NotifyServiceOrderBody( String type, String id,
-                                   NotifyErrorMessageBody errorMessage,
-                                   String state, String pePortName,
-                                   String rfsCrossId) {
-		this.type = type;
-		this.id = id;
-		this.errorMessage = errorMessage;
-		this.state = state;
-		this.pePortName = pePortName;
-		this.rfsCrossId = rfsCrossId;
-	}
+    @Override
+    public String toString() {
+        return "NotifyServiceOrderBody{" + "errorMessage=" + errorMessage + ", type='" + type + '\'' + ", id='" + id + '\'' + ", state='" + state + '\'' +
+               ", pePortName='" + pePortName + '\'' + ", rfsCrossId='" + rfsCrossId + '\'' + '}';
+    }
 
 }

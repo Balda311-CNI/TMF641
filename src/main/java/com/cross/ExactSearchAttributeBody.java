@@ -6,34 +6,35 @@ package com.cross;
 
 public class ExactSearchAttributeBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String relationName;
-	private String attributeName;
+    private String relationName;
+    private String attributeName;
 
-	public ExactSearchAttributeBody() {
-	}
+    public ExactSearchAttributeBody( String relationName, String attributeName ) {
+        this.relationName = relationName;
+        this.attributeName = attributeName;
+    }
 
-	public String getRelationName() {
-		return this.relationName;
-	}
+    public String getRelationName() {
+        return this.relationName;
+    }
 
-	public void setRelationName( String relationName) {
-		this.relationName = relationName;
-	}
+    public void setRelationName( String relationName ) {
+        this.relationName = relationName;
+    }
 
-	public String getAttributeName() {
-		return this.attributeName;
-	}
+    public String getAttributeName() {
+        return this.attributeName;
+    }
 
-	public void setAttributeName( String attributeName) {
-		this.attributeName = attributeName;
-	}
+    public void setAttributeName( String attributeName ) {
+        this.attributeName = attributeName;
+    }
 
-	public ExactSearchAttributeBody( String relationName,
-                                     String attributeName) {
-		this.relationName = relationName;
-		this.attributeName = attributeName;
-	}
+    @Override
+    public String toString() {
+        return "ExactSearchAttributeBody{" + "attributeName='" + attributeName + '\'' + ", relationName='" + relationName + '\'' + '}';
+    }
 
 }

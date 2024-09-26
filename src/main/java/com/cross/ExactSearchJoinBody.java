@@ -6,55 +6,56 @@ package com.cross;
 
 public class ExactSearchJoinBody implements java.io.Serializable {
 
-	static final long serialVersionUID = 1L;
+    static final long serialVersionUID = 1L;
 
-	private String leftRelation;
-	private String rightRelation;
-	private String filterExpression;
-	private Boolean useLeftJoin;
+    private String leftRelation;
+    private String rightRelation;
+    private String filterExpression;
+    private Boolean useLeftJoin;
 
-	public ExactSearchJoinBody() {
-	}
+    public ExactSearchJoinBody( String leftRelation, String rightRelation, String filterExpression, Boolean useLeftJoin ) {
+        this.leftRelation = leftRelation;
+        this.rightRelation = rightRelation;
+        this.filterExpression = filterExpression;
+        this.useLeftJoin = useLeftJoin;
+    }
 
-	public String getLeftRelation() {
-		return this.leftRelation;
-	}
+    public String getLeftRelation() {
+        return this.leftRelation;
+    }
 
-	public void setLeftRelation( String leftRelation) {
-		this.leftRelation = leftRelation;
-	}
+    public void setLeftRelation( String leftRelation ) {
+        this.leftRelation = leftRelation;
+    }
 
-	public String getRightRelation() {
-		return this.rightRelation;
-	}
+    public String getRightRelation() {
+        return this.rightRelation;
+    }
 
-	public void setRightRelation( String rightRelation) {
-		this.rightRelation = rightRelation;
-	}
+    public void setRightRelation( String rightRelation ) {
+        this.rightRelation = rightRelation;
+    }
 
-	public String getFilterExpression() {
-		return this.filterExpression;
-	}
+    public String getFilterExpression() {
+        return this.filterExpression;
+    }
 
-	public void setFilterExpression( String filterExpression) {
-		this.filterExpression = filterExpression;
-	}
+    public void setFilterExpression( String filterExpression ) {
+        this.filterExpression = filterExpression;
+    }
 
-	public Boolean getUseLeftJoin() {
-		return this.useLeftJoin;
-	}
+    public Boolean getUseLeftJoin() {
+        return this.useLeftJoin;
+    }
 
-	public void setUseLeftJoin( Boolean useLeftJoin) {
-		this.useLeftJoin = useLeftJoin;
-	}
+    public void setUseLeftJoin( Boolean useLeftJoin ) {
+        this.useLeftJoin = useLeftJoin;
+    }
 
-	public ExactSearchJoinBody( String leftRelation,
-                                String rightRelation, String filterExpression,
-                                Boolean useLeftJoin) {
-		this.leftRelation = leftRelation;
-		this.rightRelation = rightRelation;
-		this.filterExpression = filterExpression;
-		this.useLeftJoin = useLeftJoin;
-	}
+    @Override
+    public String toString() {
+        return "ExactSearchJoinBody{" + "filterExpression='" + filterExpression + '\'' + ", leftRelation='" + leftRelation + '\'' + ", rightRelation='" +
+               rightRelation + '\'' + ", useLeftJoin=" + useLeftJoin + '}';
+    }
 
 }
