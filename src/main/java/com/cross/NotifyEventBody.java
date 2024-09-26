@@ -19,7 +19,7 @@ public class NotifyEventBody implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Name of the allocated PE port")
 	private String pePortName;
 
-	private NotifyErrorMessageBody error;
+	private NotifyErrorMessageBody errorMessage;
 
 	public NotifyEventBody() {
 	}
@@ -64,23 +64,24 @@ public class NotifyEventBody implements java.io.Serializable {
 		this.pePortName = pePortName;
 	}
 
-	public NotifyErrorMessageBody getError() {
-		return this.error;
+	public NotifyErrorMessageBody getErrorMessage() {
+		return this.errorMessage;
 	}
 
-	public void setError( NotifyErrorMessageBody error) {
-		this.error = error;
+	public void setErrorMessage( NotifyErrorMessageBody errorMessage) {
+		this.errorMessage = errorMessage;
 	}
 
 	public NotifyEventBody( String type, String state,
                             String projectName, String rfsCrossId,
-                            String pePortName, NotifyErrorMessageBody error) {
+                            String pePortName,
+                            NotifyErrorMessageBody errorMessage) {
 		this.type = type;
 		this.state = state;
 		this.projectName = projectName;
 		this.rfsCrossId = rfsCrossId;
 		this.pePortName = pePortName;
-		this.error = error;
+		this.errorMessage = errorMessage;
 	}
 
 }
