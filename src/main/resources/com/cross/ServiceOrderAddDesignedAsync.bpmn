@@ -835,8 +835,7 @@
           <drools:metaValue><![CDATA[Set CPE as RFS resource]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectName = (String) kcontext.getVariable("projectName");
-String rfscCrossId = (String) kcontext.getVariable("rfscCPECrossId");
+          <drools:script><![CDATA[String rfscCrossId = (String) kcontext.getVariable("rfscCPECrossId");
 String resourceCrossId = (String) kcontext.getVariable("cpeCrossId");
 
 String url = java.lang.String.format(
@@ -1029,30 +1028,6 @@ kcontext.setVariable("stateSuccess", "InProgress");
 kcontext.setVariable("stateFailed", "Rejected");
 // exact search
 kcontext.setVariable("exactSearchLimit", 1000);
-
-//kcontext.setVariable("rfscCustomerLocationCrossId", null);
-//kcontext.setVariable("rfscCPECrossId", null);
-//kcontext.setVariable("rfscPEInterfaceCrossId", null);
-//kcontext.setVariable("rfscServiceLinkCrossId", null);
-
-//kcontext.setVariable("addressCrossId", null);
-//kcontext.setVariable("addressGeometry", null);
-
-//kcontext.setVariable("peCrossId", null);
-//kcontext.setVariable("peCageCrossId", null);
-//kcontext.setVariable("peCageName", null);
-//kcontext.setVariable("peTransceiverCrossId", null);
-//kcontext.setVariable("pePortCrossId", null);
-//kcontext.setVariable("pePortName", null);
-
-//kcontext.setVariable("localityCrossId", null);
-//kcontext.setVariable("placeCrossId", null);
-//kcontext.setVariable("technicalAreaCrossId", null);
-//kcontext.setVariable("cpeCrossId", null);
-//kcontext.setVariable("cpePortCrossId", null);
-
-//kcontext.setVariable("opticalPathCrossId", null);
-//kcontext.setVariable("accessLinkCrossId", null);
 ]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:exclusiveGateway id="_FCC1D497-081A-4475-898C-D5E544E79C21" drools:dg="_27344CEA-700C-45AC-AF34-669176AD0453" name="Service components
@@ -1104,8 +1079,7 @@ found]]></drools:metaValue>
           <drools:metaValue><![CDATA[Set access link as RFS resource]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectName = (String) kcontext.getVariable("projectName");
-String rfscCrossId = (String) kcontext.getVariable("rfscServiceLinkCrossId");
+          <drools:script><![CDATA[String rfscCrossId = (String) kcontext.getVariable("rfscServiceLinkCrossId");
 String resourceCrossId = (String) kcontext.getVariable("accessLinkCrossId");
 
 String url = java.lang.String.format(
@@ -1323,15 +1297,7 @@ Routing policy: fiberRoutingPolicy]]></bpmn2:documentation>
           <drools:metaValue><![CDATA[Create optical path]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String cpePortCrossId = (String) kcontext.getVariable("cpePortCrossId");
-//String cpePortName = (String) kcontext.getVariable("cpePortName");
-//String pePortCrossId = (String) kcontext.getVariable("pePortCrossId");
-//String pePortName = (String) kcontext.getVariable("pePortName");
-//String fiberRoutingPolicy = (String) kcontext.getVariable("fiberRoutingPolicy");
-//String opticalPathLinkType = (String) kcontext.getVariable("opticalPathLinkType");
-//String linkStatus = (String) kcontext.getVariable("linkStatus");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/link/?attributesToShow=%s&projectName=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     "crossId", // attributesToShow
@@ -1530,9 +1496,7 @@ as RFS resource]]></drools:metaValue>
           <drools:metaValue><![CDATA[Find PE]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String peName = (String) kcontext.getVariable("peName");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/node/?attributesToShow=%s&limit=%d&criteria=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     "crossId", // attributesToShow
@@ -1545,9 +1509,7 @@ System.out.println("GET API call: " + url);
 ]]></drools:script>
         </drools:onEntry-script>
         <drools:onExit-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String peName = (String) kcontext.getVariable("peName");
-
-Integer responseCode = (Integer) kcontext.getVariable("restStatus");
+          <drools:script><![CDATA[Integer responseCode = (Integer) kcontext.getVariable("restStatus");
 String  responseMessage = (String) kcontext.getVariable("restStatusMsg");
 System.out.println("GET API response code: " + responseCode);
 System.out.println("GET API response message: " + responseMessage);
@@ -1713,11 +1675,7 @@ CA ENUM_CUSTOM_TOWN: addressCity]]></bpmn2:documentation>
           <drools:metaValue><![CDATA[Find address]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String addressStreetName = (String) kcontext.getVariable("addressStreetName");
-//String addressStreetNumber = String.valueOf( kcontext.getVariable("addressStreetNumber") );
-//String addressCity = (String) kcontext.getVariable("addressCity");
-
-String fulltext = addressStreetName + " " + String.valueOf(addressStreetNumber) + " " + addressCity;
+          <drools:script><![CDATA[String fulltext = addressStreetName + " " + String.valueOf(addressStreetNumber) + " " + addressCity;
 fulltext = fulltext.replaceAll(" ", "%20");
 String url = java.lang.String.format(
     "%s/v1/customAddress/?attributesToShow=%s&limit=%d&fulltext=%s",
@@ -1930,14 +1888,7 @@ as RFS resource]]></drools:metaValue>
           <drools:metaValue><![CDATA[Find service components]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String rfsCrossId = (String) kcontext.getVariable("rfsCrossId");
-//String rfscCustomerLocationName = (String) kcontext.getVariable("rfscCustomerLocationName");
-//String rfscCPEName = (String) kcontext.getVariable("rfscCPEName");
-//String rfscPEInterfaceName = (String) kcontext.getVariable("rfscPEInterfaceName");
-//String rfscServiceLinkName = (String) kcontext.getVariable("rfscServiceLinkName");
-//Integer exactSearchLimit = (Integer) kcontext.getVariable("exactSearchLimit");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/exactSearch/",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl")
 );
@@ -1990,13 +1941,7 @@ System.out.println("POST API call: " + url + " " + body.toString());
 ]]></drools:script>
         </drools:onEntry-script>
         <drools:onExit-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String rfsCrossId = (String) kcontext.getVariable("rfsCrossId");
-//String rfscCustomerLocationName = (String) kcontext.getVariable("rfscCustomerLocationName");
-//String rfscCPEName = (String) kcontext.getVariable("rfscCPEName");
-//String rfscPEInterfaceName = (String) kcontext.getVariable("rfscPEInterfaceName");
-//String rfscServiceLinkName = (String) kcontext.getVariable("rfscServiceLinkName");
-
-Integer responseCode = (Integer) kcontext.getVariable("restStatus");
+          <drools:script><![CDATA[Integer responseCode = (Integer) kcontext.getVariable("restStatus");
 String  responseMessage = (String) kcontext.getVariable("restStatusMsg");
 System.out.println("POST API response code: " + responseCode);
 System.out.println("POST API response message: " + responseMessage);
@@ -2486,7 +2431,6 @@ if ( responseCode >= 200 && responseCode < 300 ) {
             org.json.JSONObject item = (org.json.JSONObject) items.get(i);
             String _peCageCrossId = item.getString("BASE__DIRECT_CHILDREN/crossId");
             String _peCageName = item.getString("BASE__DIRECT_CHILDREN/name");
-            //String peCageChildCrossId = item.getString("BASE__DIRECT_CHILDREN__DIRECT_CHILDREN/crossId");
             if ( item.isNull("BASE__DIRECT_CHILDREN__DIRECT_CHILDREN/crossId") ) {
                 emptyCages.add( new java.util.AbstractMap.SimpleEntry<>( _peCageCrossId, _peCageName ) );
             }

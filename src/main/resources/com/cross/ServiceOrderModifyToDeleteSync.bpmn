@@ -118,16 +118,7 @@
           <drools:metaValue><![CDATA[Create project]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectParentName = (String) kcontext.getVariable("projectParentName");
-//String projectCreator = (String) kcontext.getVariable("projectCreator");
-//String projectType = (String) kcontext.getVariable("projectType");
-//String projectStatus = (String) kcontext.getVariable("projectStatus");
-//String projectNodePlannedStatus = (String) kcontext.getVariable("projectNodePlannedStatus");
-//String projectLinkPlannedStatus = (String) kcontext.getVariable("projectLinkPlannedStatus");
-//String projectRfsPlannedStatus = (String) kcontext.getVariable("projectRfsPlannedStatus");
-//String projectRfscPlannedStatus = (String) kcontext.getVariable("projectRfscPlannedStatus");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/project/?attributesToShow=%s&projectName=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     "crossId", // attributesToShow

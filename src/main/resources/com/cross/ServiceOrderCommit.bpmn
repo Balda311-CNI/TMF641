@@ -312,7 +312,6 @@ else {
       <bpmn2:incoming>_C30DF4BF-FA03-4049-9E87-C0F5D9502914</bpmn2:incoming>
       <bpmn2:outgoing>_D4F9A35C-2C96-4A04-A5D0-C038F675F876</bpmn2:outgoing>
       <bpmn2:script><![CDATA[kcontext.setVariable("projectParentName", "GENERAL");
-//kcontext.setVariable("projectCrossId", null);
 ]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:scriptTask id="_CDACFCC6-D5EE-4362-81CE-6474672F5670" name="Validate input" scriptFormat="http://www.java.com/java">
@@ -362,10 +361,7 @@ for ( String attribute : attributes ) {
           <drools:metaValue><![CDATA[Commit project]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectParentName = (String) kcontext.getVariable("projectParentName");
-//String projectCrossId = (String) kcontext.getVariable("projectCrossId");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/project/commit/%s?projectName=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     projectCrossId, // attributesToShow

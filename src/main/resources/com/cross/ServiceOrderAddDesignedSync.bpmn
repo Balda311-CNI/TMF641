@@ -418,10 +418,7 @@
           <drools:metaValue><![CDATA[Create RFS access]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectName = (String) kcontext.getVariable("projectName");
-//String rfsTemplateName = (String) kcontext.getVariable("rfsTemplateAccessName");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/service/createFromServiceTemplate/?attributesToShow=%s&projectName=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     "crossId", // attributesToShow
@@ -681,10 +678,7 @@ else {
           <drools:metaValue><![CDATA[Create RFS internet]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectName = (String) kcontext.getVariable("projectName");
-//String rfsTemplateName = (String) kcontext.getVariable("rfsTemplateInternetName");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/service/createFromServiceTemplate/?attributesToShow=%s&projectName=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     "crossId", // attributesToShow
@@ -837,12 +831,7 @@ else {
           <drools:metaValue><![CDATA[Find service components]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String rfsCrossId = (String) kcontext.getVariable("rfsCrossId");
-//String rfscAccessName = (String) kcontext.getVariable("rfscAccessName");
-//String rfscUnderlayName = (String) kcontext.getVariable("rfscUnderlayName");
-//Integer exactSearchLimit = (Integer) kcontext.getVariable("exactSearchLimit");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/exactSearch/",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl")
 );
@@ -881,11 +870,7 @@ System.out.println("POST API call: " + url + " " + body.toString());
 ]]></drools:script>
         </drools:onEntry-script>
         <drools:onExit-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String rfsCrossId = (String) kcontext.getVariable("rfsCrossId");
-//String rfscAccessName = (String) kcontext.getVariable("rfscAccessName");
-//String rfscUnderlayName = (String) kcontext.getVariable("rfscUnderlayName");
-
-Integer responseCode = (Integer) kcontext.getVariable("restStatus");
+          <drools:script><![CDATA[Integer responseCode = (Integer) kcontext.getVariable("restStatus");
 String  responseMessage = (String) kcontext.getVariable("restStatusMsg");
 System.out.println("POST API response code: " + responseCode);
 System.out.println("POST API response message: " + responseMessage);
@@ -1091,10 +1076,7 @@ RFS resource]]></drools:metaValue>
           <drools:metaValue><![CDATA[Create RFS underlay]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectName = (String) kcontext.getVariable("projectName");
-//String rfsTemplateName = (String) kcontext.getVariable("rfsTemplateUnderlayName");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/service/createFromServiceTemplate/?attributesToShow=%s&projectName=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     "crossId", // attributesToShow
@@ -1376,9 +1358,7 @@ for ( String attribute : attributes ) {
           <drools:metaValue><![CDATA[Set RFS underlay as RFS resource]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectName = (String) kcontext.getVariable("projectName");
-//String rfscCrossId = (String) kcontext.getVariable("rfscUnderlayCrossId");
-String resourceCrossId = (String) kcontext.getVariable("rfsUnderlayCrossId");
+          <drools:script><![CDATA[String resourceCrossId = (String) kcontext.getVariable("rfsUnderlayCrossId");
 
 String url = java.lang.String.format(
     "%s/v1/serviceComponent/%s?attributesToShow=%s&projectName=%s",
@@ -1557,17 +1537,7 @@ as RFS resource]]></drools:metaValue>
           <drools:metaValue><![CDATA[Create project]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectName = (String) kcontext.getVariable("projectName");
-//String projectParentName = (String) kcontext.getVariable("projectParentName");
-//String projectCreator = (String) kcontext.getVariable("projectCreator");
-//String projectType = (String) kcontext.getVariable("projectType");
-//String projectStatus = (String) kcontext.getVariable("projectStatus");
-//String projectNodePlannedStatus = (String) kcontext.getVariable("projectNodePlannedStatus");
-//String projectLinkPlannedStatus = (String) kcontext.getVariable("projectLinkPlannedStatus");
-//String projectRfsPlannedStatus = (String) kcontext.getVariable("projectRfsPlannedStatus");
-//String projectRfscPlannedStatus = (String) kcontext.getVariable("projectRfscPlannedStatus");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/project/?attributesToShow=%s&projectName=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     "crossId", // attributesToShow
@@ -1807,9 +1777,7 @@ else {
           <drools:metaValue><![CDATA[Set RFS access as RFS resource]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectName = (String) kcontext.getVariable("projectName");
-//String rfscCrossId = (String) kcontext.getVariable("rfscAccessCrossId");
-String resourceCrossId = (String) kcontext.getVariable("rfsAccessCrossId");
+          <drools:script><![CDATA[String resourceCrossId = (String) kcontext.getVariable("rfsAccessCrossId");
 
 String url = java.lang.String.format(
     "%s/v1/serviceComponent/%s?attributesToShow=%s&projectName=%s",
@@ -1985,12 +1953,6 @@ kcontext.setVariable("rfsTemplateUnderlayName", "GC Underlay service component")
 
 kcontext.setVariable("rfscAccessName", "Access");
 kcontext.setVariable("rfscUnderlayName", "Underlay service component");
-
-//kcontext.setVariable("rfsAccessCrossId", null);
-//kcontext.setVariable("rfsUnderlayCrossId", null);
-
-//kcontext.setVariable("rfscAccessCrossId", null);
-//kcontext.setVariable("rfscUnderlayCrossId", null);
 ]]></bpmn2:script>
     </bpmn2:scriptTask>
   </bpmn2:process>

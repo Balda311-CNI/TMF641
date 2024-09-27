@@ -131,7 +131,6 @@
       <bpmn2:incoming>_82EAB675-959E-41D2-B9C3-4E23EA7D95E5</bpmn2:incoming>
       <bpmn2:outgoing>_F0A9F913-6BFE-432E-9DD2-2AE357F13CB3</bpmn2:outgoing>
       <bpmn2:script><![CDATA[kcontext.setVariable("rfsStatusDesigned", "DESIGNED");
-//kcontext.setVariable("rfsStatus", null);
 ]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:callActivity id="_4AB200D9-6C50-4564-A57C-11FA5794C55A" drools:independent="false" drools:waitForCompletion="true" name="Notify Completed/Failed" calledElement="TMF641.ServiceOrderNotification">

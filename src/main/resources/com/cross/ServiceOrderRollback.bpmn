@@ -141,9 +141,7 @@
           <drools:metaValue><![CDATA[Yes]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Hi_PInspEe-JPIWk7k0tuQ" language="http://www.java.com/java"><![CDATA[//String rfsStatusDesigned = (String) kcontext.getVariable("rfsStatusDesigned");
-//return rfsStatusDesigned.equals( kcontext.getVariable("rfsStatus") );
-return rfsStatusDesigned.equals( rfsStatus );]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Hi_PInspEe-JPIWk7k0tuQ" language="http://www.java.com/java"><![CDATA[return rfsStatusDesigned.equals( rfsStatus );]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_B1F38482-1B7C-41A5-AE05-D1DFEE895874" name="No" sourceRef="_6ACA8C38-211A-4709-8EC6-5A49F8056AA2" targetRef="_DA3AB357-A7A7-4CDB-9606-A64F71BFD844">
       <bpmn2:extensionElements>
@@ -167,9 +165,7 @@ return rfsStatusDesigned.equals( rfsStatus );]]></bpmn2:conditionExpression>
           <drools:metaValue><![CDATA[No]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Hi_PJXspEe-JPIWk7k0tuQ" language="http://www.java.com/java"><![CDATA[//String rfsStatusDesigned = (String) kcontext.getVariable("rfsStatusDesigned");
-//return !rfsStatusDesigned.equals( kcontext.getVariable("rfsStatus") );
-return !rfsStatusDesigned.equals( rfsStatus );]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_Hi_PJXspEe-JPIWk7k0tuQ" language="http://www.java.com/java"><![CDATA[return !rfsStatusDesigned.equals( rfsStatus );]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_ED55C04C-DD0D-4F06-94AC-14482BC5B8BA" name="No" sourceRef="_BBFDA79C-26CA-42EA-9F1B-40C6CFEDED8A" targetRef="_DF62610B-645C-42C8-863D-5B0F1359E300">
       <bpmn2:extensionElements>
@@ -245,8 +241,6 @@ return !rfsStatusDesigned.equals( rfsStatus );]]></bpmn2:conditionExpression>
       <bpmn2:outgoing>_B02B0E4E-BA04-41C6-9253-3E97B4FABA1B</bpmn2:outgoing>
       <bpmn2:script><![CDATA[kcontext.setVariable("projectParentName", "GENERAL");
 kcontext.setVariable("rfsStatusDesigned", "DESIGNED");
-//kcontext.setVariable("projectCrossId", null);
-//kcontext.setVariable("rfsStatus", null);
 ]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:exclusiveGateway id="_6ACA8C38-211A-4709-8EC6-5A49F8056AA2" name="Rolled back" gatewayDirection="Diverging">
@@ -270,10 +264,7 @@ kcontext.setVariable("rfsStatusDesigned", "DESIGNED");
           <drools:metaValue><![CDATA[Rollback project]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectParentName = (String) kcontext.getVariable("projectParentName");
-//String projectCrossId = (String) kcontext.getVariable("projectCrossId");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/project/rollback/%s?projectName=%s",
     kcontext.getKieRuntime().getGlobal("crossApiBaseUrl"),
     projectCrossId, // attributesToShow
@@ -590,9 +581,7 @@ else {
           <drools:metaValue><![CDATA[Remove service entities]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[//String projectParentName = (String) kcontext.getVariable("projectParentName");
-
-String url = java.lang.String.format(
+          <drools:script><![CDATA[String url = java.lang.String.format(
     "%s/v1/som/tmf641/serviceEntities/%s?projectName=%s",
     kcontext.getKieRuntime().getGlobal("gcApiBaseUrl"),
     rfsCrossId,
