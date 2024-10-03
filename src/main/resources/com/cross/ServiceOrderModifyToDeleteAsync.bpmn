@@ -340,7 +340,7 @@ else {
       <bpmn2:dataInputAssociation id="_4VGbQoFgEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_7154FC5F-D17A-4EE1-A3B3-BA3E53AD4758_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_4VGbQ4FgEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VGbRIFgEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VGbRIFgEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_4VGbRYFgEe-cxu8b1NBOBQ">_7154FC5F-D17A-4EE1-A3B3-BA3E53AD4758_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -870,7 +870,7 @@ else {
       <bpmn2:dataInputAssociation id="_4VHCUYFgEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_1E58F751-EB31-4923-B7D3-A7EE29077F1C_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_4VHCUoFgEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VHCU4FgEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VHCU4FgEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_4VHCVIFgEe-cxu8b1NBOBQ">_1E58F751-EB31-4923-B7D3-A7EE29077F1C_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -1048,7 +1048,7 @@ else if ( responseCode != 404 ) {
       <bpmn2:dataInputAssociation id="_4VHCaIFgEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_6C8D380C-AFCD-4B40-B88E-5BA96CA0FB36_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_4VHCaYFgEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VHCaoFgEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VHCaoFgEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_4VHCa4FgEe-cxu8b1NBOBQ">_6C8D380C-AFCD-4B40-B88E-5BA96CA0FB36_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>

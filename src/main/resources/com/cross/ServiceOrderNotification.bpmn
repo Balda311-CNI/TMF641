@@ -280,7 +280,7 @@ else {
       <bpmn2:dataInputAssociation id="_bcvyLHvJEe-JPIWk7k0tuQ">
         <bpmn2:targetRef>_5F239253-3772-4C04-B5FC-8F5396E892D9_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_bcvyLXvJEe-JPIWk7k0tuQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_bcvyLnvJEe-JPIWk7k0tuQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_bcvyLnvJEe-JPIWk7k0tuQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_bcvyL3vJEe-JPIWk7k0tuQ">_5F239253-3772-4C04-B5FC-8F5396E892D9_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>

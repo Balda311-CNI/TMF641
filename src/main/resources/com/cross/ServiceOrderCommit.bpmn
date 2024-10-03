@@ -274,7 +274,7 @@ else {
       <bpmn2:dataInputAssociation id="_bBcwf4FfEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_12A6C268-6067-46B7-8135-B19D55376B11_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_bBcwgIFfEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_bBcwgYFfEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_bBcwgYFfEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_bBcwgoFfEe-cxu8b1NBOBQ">_12A6C268-6067-46B7-8135-B19D55376B11_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -451,7 +451,7 @@ else {
       <bpmn2:dataInputAssociation id="_bBdXi4FfEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_7E7831A6-66B6-4631-A843-F0602AFFAE2F_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_bBdXjIFfEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_bBdXjYFfEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_bBdXjYFfEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_bBdXjoFfEe-cxu8b1NBOBQ">_7E7831A6-66B6-4631-A843-F0602AFFAE2F_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -648,7 +648,7 @@ else {
       <bpmn2:dataInputAssociation id="_bBdXooFfEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_26537182-EA3F-4D35-ADF5-82EE27833790_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_bBdXo4FfEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_bBdXpIFfEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_bBdXpIFfEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_bBdXpYFfEe-cxu8b1NBOBQ">_26537182-EA3F-4D35-ADF5-82EE27833790_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>

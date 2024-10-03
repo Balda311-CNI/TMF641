@@ -410,7 +410,7 @@ else {
       <bpmn2:dataInputAssociation id="_Qi2b9oFlEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_AFA700E7-65F1-4B35-BC5C-61BEDA88D9A4_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_Qi2b94FlEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi2b-IFlEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi2b-IFlEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Qi2b-YFlEe-cxu8b1NBOBQ">_AFA700E7-65F1-4B35-BC5C-61BEDA88D9A4_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -574,7 +574,7 @@ else {
       <bpmn2:dataInputAssociation id="_Qi2cDIFlEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_BC4B4A29-207C-4398-877A-07F1084CF434_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_Qi2cDYFlEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi2cDoFlEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi2cDoFlEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Qi2cD4FlEe-cxu8b1NBOBQ">_BC4B4A29-207C-4398-877A-07F1084CF434_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -717,7 +717,7 @@ else {
       <bpmn2:dataInputAssociation id="_Qi2cI4FlEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_3511CB21-0E94-411A-A92D-5886DD82D1C4_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_Qi2cJIFlEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi2cJYFlEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi2cJYFlEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Qi2cJoFlEe-cxu8b1NBOBQ">_3511CB21-0E94-411A-A92D-5886DD82D1C4_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -962,7 +962,7 @@ else {
       <bpmn2:dataInputAssociation id="_Qi3C-YFlEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_FADDF13F-296D-414A-91E5-98DEAFCCFCF2_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_Qi3C-oFlEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi3C-4FlEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi3C-4FlEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Qi3C_IFlEe-cxu8b1NBOBQ">_FADDF13F-296D-414A-91E5-98DEAFCCFCF2_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -1157,7 +1157,7 @@ else {
       <bpmn2:dataInputAssociation id="_Qi3DEIFlEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_774711B6-ABCF-4687-8F04-7B5DBBBA7214_ContentTypeInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_Qi3DEYFlEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi3DEoFlEe-cxu8b1NBOBQ"><![CDATA[application/json]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_Qi3DEoFlEe-cxu8b1NBOBQ"><![CDATA[application/json;charset=UTF-8]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_Qi3DE4FlEe-cxu8b1NBOBQ">_774711B6-ABCF-4687-8F04-7B5DBBBA7214_ContentTypeInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
