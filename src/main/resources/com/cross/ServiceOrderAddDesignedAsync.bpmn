@@ -1026,7 +1026,7 @@ kcontext.setVariable("cpePortName", "vni0/0");
 // state to be notified to listeners at a successful end
 kcontext.setVariable("stateSuccess", "InProgress");
 // state to be notified to listeners at an unsuccessful end
-kcontext.setVariable("stateFailed", "Rejected");
+kcontext.setVariable("stateFailed", "Failed");
 // exact search
 kcontext.setVariable("exactSearchLimit", 1000);
 ]]></bpmn2:script>
@@ -2158,7 +2158,7 @@ if ( missingServiceComponentName != null ) {
       <bpmn2:dataInputAssociation id="_IWCaQYIjEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_9840688C-004C-4861-B09D-A26D2430454D_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_IWCaQoIjEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IWCaQ4IjEe-cxu8b1NBOBQ"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IWCaQ4IjEe-cxu8b1NBOBQ"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_IWCaRIIjEe-cxu8b1NBOBQ">_9840688C-004C-4861-B09D-A26D2430454D_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -3826,10 +3826,10 @@ else {
         <bpmn2:targetRef>restStatusMsg</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:task>
-    <bpmn2:callActivity id="_68BC5595-2E91-4E7A-9BB3-5516D242431F" drools:independent="false" drools:waitForCompletion="true" name="Notify InProgress/Rejected" calledElement="TMF641.ServiceOrderNotification">
+    <bpmn2:callActivity id="_68BC5595-2E91-4E7A-9BB3-5516D242431F" drools:independent="false" drools:waitForCompletion="true" name="Notify InProgress/Failed" calledElement="TMF641.ServiceOrderNotification">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[Notify InProgress/Rejected]]></drools:metaValue>
+          <drools:metaValue><![CDATA[Notify InProgress/Failed]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_B2F52F57-02DF-4CF7-A3F0-5C345567AAC7</bpmn2:incoming>
@@ -3881,7 +3881,7 @@ else {
       <bpmn2:dataInputAssociation id="_IWDBUYIjEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_68BC5595-2E91-4E7A-9BB3-5516D242431F_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_IWDBUoIjEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IWDBU4IjEe-cxu8b1NBOBQ"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IWDBU4IjEe-cxu8b1NBOBQ"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_IWDBVIIjEe-cxu8b1NBOBQ">_68BC5595-2E91-4E7A-9BB3-5516D242431F_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>

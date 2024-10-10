@@ -459,10 +459,10 @@ else {
       <bpmn2:incoming>_F8F24DA6-C425-42F1-84FA-E4A9CA053F00</bpmn2:incoming>
       <bpmn2:errorEventDefinition id="_4VGbaIFgEe-cxu8b1NBOBQ" drools:erefname="ValidationError" errorRef="ValidationError"/>
     </bpmn2:endEvent>
-    <bpmn2:callActivity id="_8F69ECA8-ED33-47C0-904F-BFA5753E83FB" drools:independent="false" drools:waitForCompletion="true" name="Notify Rejected" calledElement="TMF641.ServiceOrderNotification">
+    <bpmn2:callActivity id="_8F69ECA8-ED33-47C0-904F-BFA5753E83FB" drools:independent="false" drools:waitForCompletion="true" name="Notify Failed" calledElement="TMF641.ServiceOrderNotification">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[Notify Rejected]]></drools:metaValue>
+          <drools:metaValue><![CDATA[Notify Failed]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_D33B90C1-30E1-4F04-90A4-1BE84D28C27E</bpmn2:incoming>
@@ -506,7 +506,7 @@ else {
       <bpmn2:dataInputAssociation id="_4VGbdIFgEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_8F69ECA8-ED33-47C0-904F-BFA5753E83FB_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_4VGbdYFgEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VGbdoFgEe-cxu8b1NBOBQ"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VGbdoFgEe-cxu8b1NBOBQ"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_4VGbd4FgEe-cxu8b1NBOBQ">_8F69ECA8-ED33-47C0-904F-BFA5753E83FB_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -592,7 +592,7 @@ else {
       <bpmn2:dataInputAssociation id="_4VGbiYFgEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_30D16EC4-A4F7-4ACD-925A-15BF9C33535F_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_4VGbioFgEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VGbi4FgEe-cxu8b1NBOBQ"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VGbi4FgEe-cxu8b1NBOBQ"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_4VGbjIFgEe-cxu8b1NBOBQ">_30D16EC4-A4F7-4ACD-925A-15BF9C33535F_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -664,7 +664,7 @@ else {
       <bpmn2:dataInputAssociation id="_4VGbnYFgEe-cxu8b1NBOBQ">
         <bpmn2:targetRef>_FFD679BD-DA2A-4C3D-9148-EFFDF51E2ABE_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_4VGbnoFgEe-cxu8b1NBOBQ">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VGbn4FgEe-cxu8b1NBOBQ"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_4VGbn4FgEe-cxu8b1NBOBQ"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_4VGboIFgEe-cxu8b1NBOBQ">_FFD679BD-DA2A-4C3D-9148-EFFDF51E2ABE_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>

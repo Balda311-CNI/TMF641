@@ -421,10 +421,10 @@ for ( String attribute : attributes ) {
         <bpmn2:targetRef>pePortName</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:callActivity>
-    <bpmn2:callActivity id="_0CDA8E7B-C998-4E78-AAEB-8EE8C63DC560" drools:independent="false" drools:waitForCompletion="true" name="Notify InProgress/Rejected" calledElement="TMF641.ServiceOrderNotification">
+    <bpmn2:callActivity id="_0CDA8E7B-C998-4E78-AAEB-8EE8C63DC560" drools:independent="false" drools:waitForCompletion="true" name="Notify InProgress/Failed" calledElement="TMF641.ServiceOrderNotification">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[Notify InProgress/Rejected]]></drools:metaValue>
+          <drools:metaValue><![CDATA[Notify InProgress/Failed]]></drools:metaValue>
         </drools:metaData>
         <drools:onEntry-script scriptFormat="http://www.java.com/java">
           <drools:script><![CDATA[kcontext.setVariable("projectName", projectName);
@@ -473,7 +473,7 @@ kcontext.setVariable("pePortName", pePortName);]]></drools:script>
       <bpmn2:dataInputAssociation id="_jb3Fv4AuEe-AHf-3S4RB0Q">
         <bpmn2:targetRef>_0CDA8E7B-C998-4E78-AAEB-8EE8C63DC560_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_jb3FwIAuEe-AHf-3S4RB0Q">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_jb3FwYAuEe-AHf-3S4RB0Q"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_jb3FwYAuEe-AHf-3S4RB0Q"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_jb3FwoAuEe-AHf-3S4RB0Q">_0CDA8E7B-C998-4E78-AAEB-8EE8C63DC560_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -680,7 +680,7 @@ kcontext.setVariable("pePortName", pePortName);]]></drools:script>
       <bpmn2:dataInputAssociation id="_jb3F7oAuEe-AHf-3S4RB0Q">
         <bpmn2:targetRef>_23A10DED-36B4-4DF2-83FD-EE4285A8BCEF_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_jb3F74AuEe-AHf-3S4RB0Q">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_jb3F8IAuEe-AHf-3S4RB0Q"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_jb3F8IAuEe-AHf-3S4RB0Q"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_jb3F8YAuEe-AHf-3S4RB0Q">_23A10DED-36B4-4DF2-83FD-EE4285A8BCEF_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>

@@ -300,7 +300,7 @@
       <bpmn2:dataInputAssociation id="_-zqH24AvEe-AHf-3S4RB0Q">
         <bpmn2:targetRef>_F260E50E-D85D-47DA-A1D2-9452D28AF782_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_-zqH3IAvEe-AHf-3S4RB0Q">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_-zqH3YAvEe-AHf-3S4RB0Q"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_-zqH3YAvEe-AHf-3S4RB0Q"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_-zqH3oAvEe-AHf-3S4RB0Q">_F260E50E-D85D-47DA-A1D2-9452D28AF782_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
@@ -614,10 +614,10 @@ for ( String attribute : attributes ) {
         <bpmn2:targetRef>error</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:callActivity>
-    <bpmn2:callActivity id="_E62FB153-1C1F-4F92-A4F6-3ECB48DEC27A" drools:independent="false" drools:waitForCompletion="true" name="Notify InProgress/Rejected" calledElement="TMF641.ServiceOrderNotification">
+    <bpmn2:callActivity id="_E62FB153-1C1F-4F92-A4F6-3ECB48DEC27A" drools:independent="false" drools:waitForCompletion="true" name="Notify InProgress/Failed" calledElement="TMF641.ServiceOrderNotification">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
-          <drools:metaValue><![CDATA[Notify InProgress/Rejected]]></drools:metaValue>
+          <drools:metaValue><![CDATA[Notify InProgress/Failed]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_1CA3A037-FD50-47B7-8220-7027BAB0CA0D</bpmn2:incoming>
@@ -661,7 +661,7 @@ for ( String attribute : attributes ) {
       <bpmn2:dataInputAssociation id="_-zqIEoAvEe-AHf-3S4RB0Q">
         <bpmn2:targetRef>_E62FB153-1C1F-4F92-A4F6-3ECB48DEC27A_stateFailedInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_-zqIE4AvEe-AHf-3S4RB0Q">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_-zqIFIAvEe-AHf-3S4RB0Q"><![CDATA[rejected]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_-zqIFIAvEe-AHf-3S4RB0Q"><![CDATA[failed]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_-zqIFYAvEe-AHf-3S4RB0Q">_E62FB153-1C1F-4F92-A4F6-3ECB48DEC27A_stateFailedInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
